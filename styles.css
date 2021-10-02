@@ -135,7 +135,7 @@ nav .toggle-collapse .toggle-icons i {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff7b31;
+  background-color: #fff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -383,6 +383,7 @@ nav .toggle-collapse .toggle-icons i {
   display: block;
   width: 100%;
   height: auto;
+  z-index: auto;
 }
 .triangle {
   position: absolute;
@@ -548,7 +549,7 @@ nav .toggle-collapse .toggle-icons i {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  color: #d1d1d1;
+  color: #fff;
   font-weight: 300;
   line-height: 23px;
   letter-spacing: 0.02em;
@@ -572,13 +573,13 @@ nav .toggle-collapse .toggle-icons i {
 
 .wrapper-2 {
   display: grid;
-  grid-template-columns: 5fr 10.5fr;
+  grid-template-columns: 1fr 4fr;
   padding-left: 1rem;
 }
 
 .wrapper-2 .sub-wrap-left img {
   height: 99%;
-  width: 89%;
+  width: 90%;
   min-width: none;
   object-fit: cover;
 }
@@ -595,7 +596,7 @@ nav .toggle-collapse .toggle-icons i {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 
-  color: #d1d1d1;
+  color: #000;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -788,10 +789,74 @@ nav .toggle-collapse .toggle-icons i {
   .wrapper-1 {
     grid-template-columns: 1fr;
   }
+  .wrapper-2 {
+    grid-template-columns: 1fr;
+  }
   .wrapper-2 .sub-wrap-left img {
     height: 100%;
     width: 80%;
     min-width: none;
     object-fit: cover;
   }
+}
+
+/*------------Know Us More Section CSS---------------*/
+.know_more {
+  background: url(./assests/home/know_us_more.png), rgba(0, 0, 0, 0.37);
+}
+#know_more_us {
+  padding: 0.9rem 1.2rem;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+#know_more_us h2 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0px;
+}
+#know_more_us p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.know_more #know_more_us .cent {
+  text-align: center;
+}
+.know_more #know_more_us .cent a {
+  display: inline-block;
+  color: #ff7b31;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 11px 22px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  border: 1px solid #ff7b31;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.know_more #know_more_us .cent a:hover {
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
+  color: #fff;
 }
