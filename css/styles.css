@@ -192,7 +192,7 @@ nav .toggle-collapse .toggle-icons i {
 .home {
   display: flex;
   background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(20, 20, 20, 0.582)),
-    url(./assets/home/menu.png);
+    url(../assets/home/menu.png);
 
   height: 100vh;
   color: #fff;
@@ -802,7 +802,7 @@ nav .toggle-collapse .toggle-icons i {
 
 /*------------Know Us More Section CSS---------------*/
 .know_more {
-  background: url(./assets/home/know_us_more.png), rgba(0, 0, 0, 0.37);
+  background: url(../assets/home/know_us_more.png), rgba(0, 0, 0, 0.37);
 }
 #know_more_us {
   padding: 0.9rem 1.2rem;
