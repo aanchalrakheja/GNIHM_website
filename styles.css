@@ -47,13 +47,29 @@ a {
 }
 
 .text-black {
-  color: #69273f;
+  color: #fff;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+}
+.nav.sticky {
+  background: #ff5c00;
+}
+.nav.sticky .social {
+  color: #fff;
+}
+.nav .sticky .nav-items {
+  color: #fff;
+}
+
+.nav .sticky .hover-underline-animation:after {
+  background-color: rgb(167, 148, 148);
 }
 
 nav {
   padding: 0 10rem;
   position: relative;
-  background-color: white;
   justify-content: space-between;
   height: 0rem;
   min-height: 13vh;
@@ -78,7 +94,7 @@ nav .nav-items .nav-link {
 
 nav .social {
   padding: 1.7rem 0;
-  color: #69273f;
+  color: #fff;
   display: flex;
 }
 
@@ -108,7 +124,7 @@ nav .toggle-collapse .toggle-icons i {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #69273f;
+  color: #fff;
 }
 
 .hover-underline-animation:after {
@@ -119,7 +135,7 @@ nav .toggle-collapse .toggle-icons i {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #69273f;
+  background-color: #ff7b31;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -171,12 +187,12 @@ nav .toggle-collapse .toggle-icons i {
   left: -2px;
 }
 
-/*Home Page*/
+/*------------------------------HOME PAGE---------------------------------*/
 /* home section styling */
 .home {
   display: flex;
   background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(20, 20, 20, 0.582)),
-    url(./images/menu.png);
+    url(./assests/home/menu.png);
 
   height: 100vh;
   color: #fff;
@@ -222,8 +238,8 @@ nav .toggle-collapse .toggle-icons i {
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  background-color: #69273f;
-  border: 2px solid #69273f;
+  background-color: #ff7b31;
+  border: 2px solid #ff7b31;
   color: #fff;
 }
 
@@ -244,13 +260,13 @@ nav .toggle-collapse .toggle-icons i {
 .strip1 {
   width: 207px;
   height: 8px;
-  background-color: #69273f;
+  background-color: #ff7b31;
   justify-self: end;
 }
 .strip2 {
   width: 207px;
   height: 8px;
-  background-color: #69273f;
+  background-color: #ff7b31;
   float: left;
   margin-top: 12px;
 }
@@ -286,7 +302,7 @@ nav .toggle-collapse .toggle-icons i {
 }
 .about-content .left a {
   display: inline-block;
-  color: #69273f;
+  color: #ff7b31;
   font-size: 14px;
   font-weight: 300;
   padding: 11px 22px;
@@ -294,12 +310,12 @@ nav .toggle-collapse .toggle-icons i {
   margin-bottom: 20px;
   border-radius: 30px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #69273f;
+  border: 2px solid #ff7b31;
   transition: all 0.3s ease;
 }
 .about-content .left a:hover {
-  border: 2px solid #69273f;
-  background-color: #69273f;
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
   color: #fff;
 }
 
@@ -318,7 +334,7 @@ nav .toggle-collapse .toggle-icons i {
 }
 .outer-wrap .cent a {
   display: inline-block;
-  color: #69273f;
+  color: #ff7b31;
   background-color: #fff;
   font-size: 12px;
   text-align: center;
@@ -327,13 +343,13 @@ nav .toggle-collapse .toggle-icons i {
   padding: 10px 20px;
   border-radius: 20px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #69273f;
+  border: 2px solid #ff7b31;
   transition: all 0.3s ease;
 }
 
 .outer-wrap .cent a:hover {
-  border: 2px solid #69273f;
-  background-color: #69273f;
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
   color: #fff;
 }
 
@@ -375,8 +391,8 @@ nav .toggle-collapse .toggle-icons i {
   border-radius: 0px;
   z-index: 1;
   transform: translateY(-100%);
-  background-color: #69273fcf;
-  clip-path: polygon(0 29%, 0% 100%, 100% 100%);
+  background-color: #ff7d31bd;
+  clip-path: polygon(0 29%, 0% 100%, 100% 120%);
 }
 
 /* Card Based Layout - Base styles */
@@ -414,7 +430,7 @@ nav .toggle-collapse .toggle-icons i {
 
 .cards .card .card-content button {
   display: inline-block;
-  color: #69273f;
+  color: #ff7b31;
   background-color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -423,17 +439,21 @@ nav .toggle-collapse .toggle-icons i {
   margin-bottom: 20px;
   border-radius: 40px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid #69273f;
+  border: 2px solid #ff7b31;
   transition: all 0.3s ease;
 }
 .cards .card .card-content button:hover {
-  border: 2px solid #69273f;
-  background-color: #69273f;
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
   color: #fff;
 }
 
 /* Flexbox */
 @media screen and (min-width: 50em) {
+  .hover-underline-animation:after {
+    background-color: #fff;
+  }
+
   .outer-wrap {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -509,7 +529,7 @@ nav .toggle-collapse .toggle-icons i {
 /*WHY GNIHM*/
 .why {
   /* display: grid; */
-  background-color: #69273f;
+  background-color: #ff7b31;
   /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
   /* grid-gap: 30px; */
 }
@@ -640,6 +660,9 @@ nav .toggle-collapse .toggle-icons i {
 }
 
 @media only screen and(max-width:800px) {
+  .hover-underline-animation:after {
+    background-color: #fff;
+  }
   nav .nav-items {
     flex-direction: column;
   }
@@ -690,6 +713,9 @@ nav .toggle-collapse .toggle-icons i {
 }
 
 @media (max-width: 500px) {
+  .hover-underline-animation:after {
+    background-color: #fff;
+  }
   .title {
     text-align: center;
     padding: 0 4px;
