@@ -7,7 +7,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+body {
+  overflow-x: hidden;
+}
 /* all similar content styling codes */
 section {
   padding: 100px 0;
@@ -859,4 +861,86 @@ nav .toggle-collapse .toggle-icons i {
   border: 2px solid #ff7b31;
   background-color: #ff7b31;
   color: #fff;
+}
+
+/* CSS FOR FACILITIES PAGE */
+
+.facilitypage .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 50vh;
+  width: 100vw;
+  background-image: url(../assets/Facilities/backimg_facilities.png);
+}
+.facilitypage .heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.facilitypage .heading p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  letter-spacing: 0.04em;
+}
+.facilitypage .facilitycards {
+  margin: 5rem 8rem;
+}
+
+.facilitypage .facilitycards .facilitycard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  height: 320px;
+  width: 100%;
+}
+.facilitypage .facilitycards .facilitycard img {
+  width: 192.49px;
+  height: 155px;
+}
+.facilitypage .facilitycards .facilitycard h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  color: #000000;
+}
+.customNextBtn {
+  position: absolute;
+  top: 45%;
+  right: 103%;
+}
+.customPrevBtn {
+  position: absolute;
+  top: 45%;
+  left: 103%;
+}
+.owl-carousel {
+  background-color: white !important;
+}
+@media (max-width: 900px) {
+  .facilitypage .facilitycards {
+    margin: 5rem 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .facilitypage .facilitycards {
+    margin: 5rem 5rem;
+  }
 }
