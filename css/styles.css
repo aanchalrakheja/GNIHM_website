@@ -367,7 +367,7 @@ nav .toggle-collapse .toggle-icons i {
 }
 
 .main-area {
-  padding: 0em 12em;
+  padding: 0em 10em;
 }
 .cards p {
   margin-bottom: 1.4em;
@@ -387,6 +387,7 @@ nav .toggle-collapse .toggle-icons i {
   width: 100%;
   height: auto;
   z-index: auto;
+  border-radius: 6px;
 }
 .triangle {
   position: absolute;
@@ -440,7 +441,7 @@ nav .toggle-collapse .toggle-icons i {
   font-weight: 400;
   padding: 10px 20px;
   /* margin-top: 20px; */
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 40px;
   font-family: "Poppins", sans-serif;
   border: 2px solid #ff7b31;
@@ -523,9 +524,9 @@ nav .toggle-collapse .toggle-icons i {
   }
 
   .card {
-    -webkit-flex: 0 1 calc(33% - 1em);
-    -ms-flex: 0 1 calc(33% - 1em);
-    flex: 0 1 calc(33% - 1em);
+    -webkit-flex: 0 1 calc(25% - 1em);
+    -ms-flex: 0 1 calc(25% - 1em);
+    flex: 0 1 calc(25% - 1em);
     margin-bottom: 4em;
   }
 }
@@ -862,6 +863,83 @@ nav .toggle-collapse .toggle-icons i {
   border: 2px solid #ff7b31;
   background-color: #ff7b31;
   color: #fff;
+}
+
+.campus .title {
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.cent {
+  text-align: center;
+}
+.campus .cent a {
+  display: inline-block;
+  color: #ff7b31;
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ff7b31;
+  transition: all 0.3s ease;
+}
+
+.campus .cent a:hover {
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
+  color: #fff;
+}
+
+.campus p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.campus .campuscards {
+  margin: 2rem 8rem 0 8rem;
+}
+.campus .campuscards .campuscard img {
+  width: 322px;
+  height: 359.78px;
+}
+.campus .campuscards .campuscard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(142, 142, 142, 0.25);
+  border-radius: 6px;
+  height: 320px;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .campus .campuscards {
+    margin: 5rem 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .campus .campuscards {
+    margin: 5rem 5rem;
+  }
+  .campus p {
+    font-size: 14px;
+  }
+  .campus .title {
+    font-size: 20px;
+  }
 }
 
 /* CSS FOR FACILITIES PAGE */
