@@ -404,7 +404,6 @@ nav .toggle-collapse .toggle-icons i {
 
 .cards {
   background: white;
-  margin-bottom: 1.4em;
   justify-content: space-evenly;
 }
 
@@ -441,7 +440,7 @@ nav .toggle-collapse .toggle-icons i {
   font-weight: 400;
   padding: 10px 20px;
   /* margin-top: 20px; */
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   border-radius: 40px;
   font-family: "Poppins", sans-serif;
   border: 2px solid #ff7b31;
