@@ -16,6 +16,8 @@ $(document).ready(function () {
     }
   });
 });
+
+// JQUERY FOR OWL CAROUSEL
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -30,12 +32,15 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        margin: 0,
       },
-      900: {
+      550: {
         items: 2,
+        margin: 10,
       },
       1000: {
         items: 3,
+        dots: true,
       },
     },
   });

@@ -52,6 +52,7 @@ a {
   color: #fff;
 }
 .nav {
+  z-index: 100;
   position: fixed;
   width: 100%;
 }
@@ -891,7 +892,7 @@ nav .toggle-collapse .toggle-icons i {
   letter-spacing: 0.04em;
 }
 .facilitypage .facilitycards {
-  margin: 5rem 8rem;
+  margin: 2rem 8rem 0 8rem;
 }
 
 .facilitypage .facilitycards .facilitycard {
@@ -905,18 +906,16 @@ nav .toggle-collapse .toggle-icons i {
   height: 320px;
   width: 100%;
 }
-.card1 {
+.facilitypage .card1 {
   border-bottom: 8px solid #e55504;
 }
-.card2 {
-  border-bottom: 8px solid #69273f;
-}
+
 .facilitypage .facilitycards .facilitycard img {
   width: 192.49px;
   height: 155px;
 }
 .facilitypage .facilitycards .facilitycard h2 {
-  font-family: Poppins;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -962,6 +961,7 @@ nav .toggle-collapse .toggle-icons i {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 4rem;
+  margin: 2rem 7rem;
   justify-content: center;
   align-items: center;
 }
@@ -989,16 +989,113 @@ nav .toggle-collapse .toggle-icons i {
   width: 300px;
   height: 300px;
   border-radius: 50% 50%;
-
   box-sizing: border-box;
+}
+.facilitypage .training-kitchen .intro .text {
+  text-align: justify;
+  align-self: start;
+  margin-top: 2rem;
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.04em;
+  color: #343434;
+  font-weight: 300;
+  margin-bottom: 3px;
+  font-family: "Poppins", sans-serif;
+}
+.training-kitchen .intro .text p {
+  margin-top: 1rem;
+}
+.facilitypage .facilitycards .subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+}
+.facilitypage .equipment-cards .facilitycard img {
+  height: 100%;
+  width: 100%;
+}
+.facilitypage .equipment-cards .facilitycard h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  padding: 1rem;
+}
+@media (max-width: 1150px) {
+  .facilitypage .training-kitchen .intro {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .facilitypage .training-kitchen .intro .imagedesign {
+    grid-row: 1;
+    justify-self: center;
+  }
 }
 @media (max-width: 900px) {
   .facilitypage .facilitycards {
-    margin: 5rem 5rem;
+    margin: 0rem 5rem 0 5rem;
   }
 }
 @media (max-width: 500px) {
   .facilitypage .facilitycards {
-    margin: 5rem 5rem;
+    margin: 0rem 3rem 0 3rem;
   }
 }
+@media (max-width: 600px) {
+  .facilitypage .training-kitchen .intro {
+    margin: 2rem 2rem;
+  }
+  .facilitypage .training-kitchen .intro .imagedesign .border1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    border: 1px solid rgba(230, 85, 4, 0.5);
+    box-sizing: border-box;
+  }
+  .facilitypage .training-kitchen .intro .imagedesign .border1 .border2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 277px;
+    height: 277px;
+    border-radius: 50% 50%;
+    border: 3px solid #e65504;
+    box-sizing: border-box;
+  }
+  .facilitypage .training-kitchen .intro .imagedesign .border1 .border2 img {
+    width: 235px;
+    height: 235px;
+    border-radius: 50% 50%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 500px) {
+  .facilitypage .heading h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .facilitypage .heading p {
+    font-size: 14px;
+  }
+  .facilitypage .training-kitchen .section .title {
+    font-size: 20px;
+  }
+  .facilitypage .training-kitchen .section p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  .facilitypage .training-kitchen .intro .text {
+    font-size: 14px;
+  }
+}
+
+/* END OF FACILITY PAGE CSS */
