@@ -943,6 +943,7 @@ nav .toggle-collapse .toggle-icons i {
 
 /* CSS FOR FACILITIES PAGE */
 
+/* HEADING OF EVERYPAGE ALONG WITH IMAGE */
 .facilitypage .heading {
   display: flex;
   flex-direction: column;
@@ -968,10 +969,12 @@ nav .toggle-collapse .toggle-icons i {
   margin: 0 20% 0 20%;
   letter-spacing: 0.04em;
 }
+
+/* CSS FOR CAROUSEL */
 .facilitypage .facilitycards {
   margin: 2rem 8rem 0 8rem;
 }
-
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
 .facilitypage .facilitycards .facilitycard {
   display: flex;
   align-items: center;
@@ -1003,6 +1006,8 @@ nav .toggle-collapse .toggle-icons i {
   margin-top: 2rem;
   color: #000000;
 }
+
+/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
 .customNextBtn {
   position: absolute;
   top: 45%;
@@ -1013,12 +1018,52 @@ nav .toggle-collapse .toggle-icons i {
   top: 45%;
   left: 103%;
 }
-.owl-carousel {
-  background-color: white !important;
+/* DOTS FOR CAROUSEL */
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 12px;
 }
+.owl-theme .owl-dots {
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: orange;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+@media (max-width: 900px) {
+  .facilitypage .facilitycards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .facilitypage .facilitycards {
+    margin: 0rem 3rem 0 3rem;
+  }
+}
+
+/* -------------------END OF CAROUSEL CSS--------------- */
+
 .facilitypage .training-kitchen {
   margin-top: 80px;
 }
+
+/* HEADINGS FOR SECTION */
 .facilitypage .training-kitchen .section .title {
   font-family: "Poppins", sans-serif;
   font-size: 28px;
@@ -1028,6 +1073,7 @@ nav .toggle-collapse .toggle-icons i {
   letter-spacing: 0.01em;
   text-align: Center;
 }
+/* SUBHEADING FOR SECTION*/
 .facilitypage .training-kitchen .section p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1117,16 +1163,7 @@ nav .toggle-collapse .toggle-icons i {
     justify-self: center;
   }
 }
-@media (max-width: 900px) {
-  .facilitypage .facilitycards {
-    margin: 0rem 5rem 0 5rem;
-  }
-}
-@media (max-width: 500px) {
-  .facilitypage .facilitycards {
-    margin: 0rem 3rem 0 3rem;
-  }
-}
+
 @media (max-width: 600px) {
   .facilitypage .training-kitchen .intro {
     margin: 2rem 2rem;
@@ -1177,31 +1214,5 @@ nav .toggle-collapse .toggle-icons i {
     font-size: 14px;
   }
 }
-.owl-theme .owl-controls .owl-page span {
-  background: none repeat scroll 0 0 #869791;
-  border-radius: 20px;
-  display: block;
-  height: 12px;
-  margin: 5px 7px;
-  opacity: 0.5;
-  width: 12px;
-}
-.owl-theme .owl-dots {
-  text-align: center;
-}
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: orange;
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #d6d6d6;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity 0.2s ease;
-  border-radius: 30px;
-}
 /* END OF FACILITY PAGE CSS */
