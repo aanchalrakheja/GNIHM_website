@@ -21,7 +21,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 100,
+    margin: 0,
     nav: true,
     dots: true,
     navText: [
@@ -35,11 +35,11 @@ $(document).ready(function () {
         margin: 0,
       },
       550: {
-        items: 2,
+        items: 1,
         margin: 10,
       },
       1000: {
-        items: 3,
+        items: 1,
         dots: true,
       },
     },
