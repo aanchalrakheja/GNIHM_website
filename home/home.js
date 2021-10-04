@@ -21,12 +21,12 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 100,
     nav: true,
     dots: true,
     navText: [
-      "<img class='customNextBtn' src='./assets/Facilities/leftarrow.png'/>",
-      "<img class='customPrevBtn' src='./assets/Facilities/rightarrow.png'/>",
+      "<img class='customNextBtn' src='/assets/Facilities/leftarrow.png'/>",
+      "<img class='customPrevBtn' src='/assets/Facilities/rightarrow.png'/>",
     ],
     responsiveClass: true,
     responsive: {
@@ -36,11 +36,14 @@ $(document).ready(function () {
       },
       550: {
         items: 1,
-        margin: 10,
+        margin: 24,
       },
       1000: {
-        items: 1,
-        dots: true,
+        items: 4,
+        margin:35,
+        dots: false,
+        nav:false,
+        mouseDrag:false,
       },
     },
   });

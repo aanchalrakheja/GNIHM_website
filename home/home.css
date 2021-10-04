@@ -464,6 +464,13 @@
 .campus .campuscards .campuscard img {
   width: 322px;
   height: 359.78px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.campus .campuscards .campuscard img:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  transform: scale(1.5);
 }
 .campus .campuscards .campuscard {
   display: flex;
@@ -713,5 +720,27 @@
   }
   .know_more #know_more_us .cent a {
     font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .campus .campuscards {
+    margin: 5rem 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .campus .campuscards {
+    margin: 5rem 5rem;
+  }
+  .campus p {
+    font-size: 14px;
+  }
+  .campus .title {
+    font-size: 20px;
+  }
+  .campus .campuscards .campuscard img {
+    width: 500px;
+    height: 350.78px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   }
 }
