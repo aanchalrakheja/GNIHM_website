@@ -1,13 +1,20 @@
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .flex-column {
   flex-direction: column;
   flex-wrap: wrap;
@@ -158,8 +165,9 @@ nav .toggle-collapse .toggle-icons i {
 .toggle-click::before {
   left: -2px;
 }
+
 /* ACADEMICS PAGE */
-.facilitypage .heading {
+.heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,16 +179,254 @@ nav .toggle-collapse .toggle-icons i {
   width: 100vw;
   background-image: url(../assets/academics/backimg_academics.png);
 }
-.facilitypage .heading h1 {
+.heading h1 {
   font-size: 48px;
   font-weight: bold;
   font-size: 48px;
 }
-.facilitypage .heading p {
+.heading p {
   font-weight: 300;
   font-size: 16px;
   line-height: 170.5%;
   text-align: center;
   margin: 0 20% 0 20%;
   letter-spacing: 0.04em;
+}
+.section {
+  margin-top: 80px;
+}
+.section .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-align: Center;
+}
+/* SUBHEADING FOR SECTION*/
+.section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+/*carousel*/
+.facilitycards {
+  margin: 2rem 8rem 0 8rem;
+}
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.facilitycards .facilitycard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 6px;
+  margin: 1.5rem 0 0 0;
+}
+.facilitycard .imagecard {
+  box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+}
+
+.facilitycards .facilitycard .imagecard img {
+  width: 368px;
+  height: 264px;
+}
+.facilitycard p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  text-align: center;
+  letter-spacing: 0.045em;
+
+  color: #343434;
+}
+.facilitycard h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  color: #000000;
+}
+
+/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
+.customNextBtn {
+  position: absolute;
+  top: 45%;
+  right: 103%;
+}
+.customPrevBtn {
+  position: absolute;
+  top: 45%;
+  left: 103%;
+}
+/* DOTS FOR CAROUSEL */
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 12px;
+}
+.owl-theme .owl-dots {
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: orange;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+/* ELIGIBILITY SECTION */
+
+ul {
+  margin-top: 4%;
+}
+.points {
+  margin: 0 10%;
+}
+ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+
+  letter-spacing: 0.045em;
+
+  color: #343434;
+}
+
+.points h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170.5%;
+  /* or 31px */
+  letter-spacing: 0.045em;
+  margin-top: 1.5rem;
+  color: #343434;
+}
+
+/* Document requirements */
+.documentsreq .tablediv {
+  margin: 4% 10% 0 10%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+td {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  letter-spacing: 0.045em;
+  padding: 1rem;
+  color: #343434;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  background: #ff7b31;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170.5%;
+  /* identical to box height, or 31px */
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+@media (max-width: 1000px) {
+  .facilitycard h2 {
+    font-size: 18px;
+  }
+  .facilitycard p {
+    font-size: 14px;
+    line-height: 130.5%;
+    /* or 27px */
+    margin-top: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.045em;
+    color: #343434;
+  }
+}
+@media (max-width: 900px) {
+  .facilitycards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .facilitycards {
+    margin: 0rem 3rem 0 3rem;
+  }
+  .heading h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+  .section .title {
+    font-size: 20px;
+  }
+  .section p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  ul {
+    margin-top: 1.5rem;
+  }
+  ul li {
+    font-size: 14px;
+    line-height: 130.5%;
+  }
+
+  .points h1 {
+    font-size: 16px;
+    line-height: 130.5%;
+    margin-top: 1.5rem;
+  }
+  td {
+    font-size: 14px;
+  }
+  th {
+    font-size: 16px;
+  }
 }
