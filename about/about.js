@@ -21,16 +21,27 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 10,
-    nav: false,
-    dots: false,
+    margin: 0,
+    nav: true,
+    dots: true,
     responsiveClass: true,
+    navText: [
+      "<img class='customNextBtn' src='../assets/Facilities/leftarrow.png'/>",
+      "<img class='customPrevBtn' src='../assets/Facilities/rightarrow.png'/>",
+    ],
     responsive: {
       0: {
         items: 1,
         margin: 0,
+        nav: false,
       },
-      550: {
+
+      500: {
+        items: 1,
+        margin: 0,
+        nav: false,
+      },
+      900: {
         items: 1,
         margin: 0,
       },
@@ -41,42 +52,28 @@ $(document).ready(function () {
   });
 });
 
-$('.owl-carousel.partner-image-div').owlCarousel({
+$('.partner-image-div').owlCarousel({
   center: true,
   margin:10,
   loop:true,
-  autoplay:true,
-  autoplayTimeout:3000,
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  smartSpeed: 4000,
+  center: true,
   responsive:{
       0:{
           items:1,
-          margin:1,
+          margin:0,
 
       },
       600:{
-          items:1,
-          margin:1,
+          items:2,
+          margin:0,
       },
       1000:{
-          items:3,
+          items:4,
       }
   }
 })
 
-$('#faculty').owlCarousel({
-  loop:true,
-  margin:10,
- autoplay:true,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:4
-      }
-  }
-})

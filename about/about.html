@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
-  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="../about/about.css" />
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -19,18 +19,23 @@
 </head>
 
 <body>
+
+  <!--Nav bar-->
   <nav class="nav flex-row">
     <div class="nav-menu">
       <div class="nav-brand">
-        <img src="./assets/gnihm_logo.png" alt="" />
+        <img src="../assets/about/gnihm_logo.png" alt="" />
       </div>
     </div>
+
+    <!--mobile navbar icon-->
     <div class="toggle-collapse">
       <div class="toggle-icons text-black">
         <span><i class="fas fa-bars"></i></span>
         <span class="icon"></span>
       </div>
     </div>
+    <!--Navbar items-->
     <div class="navbar">
       <ul class="nav-items flex-row">
         <li class="nav-link">
@@ -59,6 +64,9 @@
   </nav>
 
   <!--About Page-->
+
+
+  <!--About section-->
   <div class="aboutpage">
     <section class="about">
       <div class="heading">
@@ -73,11 +81,11 @@
       </div>
     </section>
 
-    <!--Goal-->
+    <!--Goal section-->
     <section class="goal">
       <div class="goal-div">
         <div class="goal-heading">
-          <img src="assets/about/vision.png" alt="" />
+          <img src="../assets/about/vision.png" alt="" />
           <h1>Vision</h1>
         </div>
         <div class="goal-desc">
@@ -93,7 +101,7 @@
       </div>
       <div class="goal-div">
         <div class="goal-heading">
-          <img src="assets/about/mission.png" alt="" />
+          <img src="../assets/about/mission.png" alt="" />
           <h1>Mission</h1>
         </div>
         <div class="goal-desc">
@@ -109,7 +117,7 @@
       </div>
     </section>
 
-    <!--Message Carasouel-->
+    <!--Message section-->
 
     <section class="message">
       <div class="message-heading">
@@ -118,14 +126,14 @@
       </div>
     </section>
 
-
+    <!--Message Carasouel-->
     <div class="owl-carousel owl-theme">
       <div>
         <div class="facilitycard">
           <div class="team-carasouel">
             <h1>CHAIRPERSON</h1>
             <div class="imag">
-              <img src="assets/about/ram.png" alt="" />
+              <img src="../assets/about/ram.png" alt="" />
             </div>
             <p class="name">Ramprasad sharma</p>
             <p class="post">CHAIRPERSON</p>
@@ -167,7 +175,7 @@
           <div class="team-carasouel">
             <h1>CHAIRPERSON</h1>
             <div class="imag">
-              <img src="assets/about/ram.png" alt="" />
+              <img src="../assets/about/ram.png" alt="" />
             </div>
             <p class="name">Ramprasad sharma</p>
             <p class="post">CHAIRPERSON</p>
@@ -184,6 +192,7 @@
         </div>
       </div>
     </div>
+    <!--End of message carasouel-->
 
 
     <!--Partner Carasouel-->
@@ -192,29 +201,36 @@
         <div class="message-heading partner-heading">
           <h2>Partnerships & Accreditions</h2>
           <p>GNIHM provides the best facilities and quality training</p>
-          
-          <div class="owl-carousel owl-theme partner-image-div" id="partner">
-            <div> <img src="assets/about/partner1.png" alt="" /></div>
-            <div> <img src="assets/about/partner2.png" alt="" /></div>
-            <div> <img src="assets/about/partner3.png" alt="" /></div>
-            <div> <img src="assets/about/partner4.png" alt="" /></div>
-            <div> <img src="assets/about/partner5.png" alt="" /></div>
-            <div> <img src="assets/about/partner1.png" alt="" /></div>
-            <div> <img src="assets/about/partner2.png" alt="" /></div>
-          </div>
+        </div>
+        <div class="owl-carousel owl-theme partner-image-div" id="partner">
+          <div> <img src="../assets/about/partner1.png" alt="" /></div>
+          <div> <img src="../assets/about/partner2.png" alt="" /></div>
+          <div> <img src="../assets/about/partner.png" alt="" /></div>
+          <div> <img src="../assets/about/partner1.png" alt="" /></div>
+          <div> <img src="../assets/about/partner2.png" alt="" /></div>
+          <div> <img src="../assets/about/partner1.png" alt="" /></div>
+          <div> <img src="../assets/about/partner2.png" alt="" /></div>
+          <div> <img src="../assets/about/partner1.png" alt="" /></div>
+          <div> <img src="../assets/about/partner2.png" alt="" /></div>
         </div>
       </div>
     </section>
+    <!-- end of Partner Carasouel-->
+
 
     <!--Faculty Carasouel-->
     <section class="faculty message">
-      <div class="faculty-heading faculty-heading">
+      <div class="faculty-heading message-heading">
         <h2>Faculty</h2>
         <p>Know what our chairperson, director and principal have to say</p>
       </div>
+
+      <!--Faculty Carasouel-->
       <div class="faculty-image-div">
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty1.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -223,7 +239,9 @@
           </p>
         </div>
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty2.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -232,7 +250,9 @@
           </p>
         </div>
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty3.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -241,7 +261,9 @@
           </p>
         </div>
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty4.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -250,7 +272,9 @@
           </p>
         </div>
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty5.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -259,7 +283,9 @@
           </p>
         </div>
         <div class="faculty-image faculty-heading">
-          <img src="assets/about/faculty6.png" alt="" />
+          <div class="round-div">
+            <img src="../assets/about/ram.png" alt="" />
+          </div>
           <h3>Ram Prasad, HOD</h3>
           <p>
             PHD - Gas dynamics,<br />
@@ -275,50 +301,54 @@
 
 
 
-
+    <!--Facilities section-->
 
     <section class="facilities message">
       <div class="facilities-heading message-heading">
-        <h1>Facilities</h1>
+        <h2>Facilities</h2>
         <p>Know what our chairperson, director and principal have to say</p>
       </div>
       <button>View Facilities&nbsp;<i class="fas fa-arrow-right"></i></button>
+
+      
       <div class="facility-circle">
         <div class="circle-div">
           <div class="circle">
-            <img src="assets/about/canteen.png" alt="" />
+            <img src="../assets/about/canteen.png" alt="" />
           </div>
           <p>canteen</p>
         </div>
         <div class="circle-div">
           <div class="circle">
-            <img src="assets/about/canteen.png" alt="" />
+            <img src="../assets/about/canteen.png" alt="" />
           </div>
           <p>canteen</p>
         </div>
 
         <div class="circle-div">
           <div class="circle">
-            <img src="assets/about/canteen.png" alt="" />
+            <img src="../assets/about/canteen.png" alt="" />
           </div>
           <p>canteen</p>
         </div>
         <div class="circle-div">
           <div class="circle">
-            <img src="assets/about/canteen.png" alt="" />
+            <img src="../assets/about/canteen.png" alt="" />
           </div>
           <p>canteen</p>
         </div>
       </div>
+      
     </section>
 
+    
 
 
   </div>
 
+  <!--End of about page-->
 
-
-  <script src="../js/about.js"></script>
+  <script src="../about/about.js"></script>
   <script src="jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
