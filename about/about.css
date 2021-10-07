@@ -335,8 +335,8 @@ nav .toggle-collapse .toggle-icons i {
 .partner {
   background: #ff7b31;
   color: white;
-  max-width: 100vw;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*Partnership carasouel*/
@@ -369,10 +369,9 @@ nav .toggle-collapse .toggle-icons i {
 
 /*Faculty section*/
 .faculty {
-  margin: 10px 166px;
+  margin: 0px 166px;
 }
 .faculty-image-div {
-  border: 2px solid #ff7b31;
   margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -414,11 +413,15 @@ nav .toggle-collapse .toggle-icons i {
 
 /*facilities section*/
 .facilities {
-  overflow-x: hidden;
   max-width: 100vw;
   margin: 0px 166px;
   padding-bottom: 150px;
   border-bottom: 7px solid #ff7b31;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
   
 }
 button {
@@ -434,10 +437,10 @@ button {
   position: absolute;
 }
 .facility-circle {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   top: 200px;
 }
 
@@ -469,9 +472,25 @@ hr{
 
 
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1250px) {
+  .facilities
+  {
+    border: none;
+  }
   
+  .facility-circle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .faculty{
+    margin: 0% 5%;
+  }
+  button {
+    align-self: center;
+    top: -10px;
+  }
+  
 }
 
 
@@ -539,6 +558,7 @@ hr{
   }
   
   .facilities {
+    max-width: 100vw;
     margin: 0% 10%;
     border: none;
   }
