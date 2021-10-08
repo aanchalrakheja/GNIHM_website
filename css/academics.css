@@ -396,6 +396,10 @@ tr:nth-child(even) {
   .facilitycards {
     margin: 0rem 3rem 0 3rem;
   }
+  .owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
   .heading h1 {
     font-weight: bold;
     font-size: 30px;
