@@ -336,8 +336,10 @@ nav .toggle-collapse .toggle-icons i {
   background: #ff7b31;
   color: white;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
+
 
 /*Partnership carasouel*/
 
@@ -463,11 +465,6 @@ button {
   font-size: 18px;
 }
 
-hr{
-  height: 5px;
-  background-color: red;
-  border: none;
-}
 
 
 
@@ -520,7 +517,11 @@ hr{
     flex-direction: column;
   }
  
+  .partner-heading > h2{
+    width:100px;
+    color: white;
 
+  }
   .partner-heading{
     max-width: 100%;
     padding: 0% 10%;
