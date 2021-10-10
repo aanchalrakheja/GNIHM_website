@@ -416,8 +416,7 @@ nav .toggle-collapse .toggle-icons i {
 /*facilities section*/
 .facilities {
   max-width: 100vw;
-  margin: -80px 166px;
-  margin-bottom: 120px;
+  margin: 0px 166px;
   padding-bottom: 150px;
   border-bottom: 7px solid #ff7b31;
   position: relative;
@@ -518,11 +517,7 @@ button {
     flex-direction: column;
   }
  
-  .partner-heading > h2{
-    width:100px;
-    color: white;
 
-  }
   .partner-heading{
     max-width: 100%;
     padding: 0% 10%;
@@ -579,6 +574,17 @@ button {
     margin: 9px 9px;
   }
   
+}
+
+@media screen and (max-width:568px) {
+  #idpartner>h2{
+    font-size: larger;
+  }
+  #idpartner>p{
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: bolder;
+  }
 }
 
 @media screen and (max-width:300px){
