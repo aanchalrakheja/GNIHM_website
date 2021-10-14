@@ -6,7 +6,6 @@
   display: flex;
   background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(20, 20, 20, 0.582)),
     url(../assets/home/menu.png);
-
   height: 100vh;
   color: #fff;
   min-height: 600px;

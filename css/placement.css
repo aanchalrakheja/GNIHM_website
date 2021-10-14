@@ -1,0 +1,55 @@
+/* student support card */
+.brandsupportcards {
+    margin: 2rem 8rem 0 8rem;
+  }
+  /* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+  .brandsupportcards .supportcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin: 1.5rem 0 0 0;
+  }
+  .supportcard .imagecard {
+    box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+  }
+  
+  .brandsupportcards .supportcard .imagecard img {
+    width: 368px;
+    height: 264px;
+  }
+  .supportcard p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170.5%;
+    /* or 27px */
+    /* text-align: center; */
+    letter-spacing: 0.045em;
+    margin-top:0.4rem;
+    width:85%;
+    text-align:center;
+    color: #343434;
+  }
+  .supportcard h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 2rem;
+    color: #000000;
+  }
+
+  .main-recruiter p{
+  height: 179px;
+  width: 1203px;
+  left: 224px;
+  top: 723px;
+  border-radius: 0px;
+  }
