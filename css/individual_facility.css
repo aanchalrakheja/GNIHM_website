@@ -1,0 +1,201 @@
+/*import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-black {
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 50vh;
+  width: 100vw;
+  background-image: url(../assets/academics/backimg_academics.png);
+}
+.heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.heading p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  letter-spacing: 0.04em;
+}
+.academics {
+  margin: 0 8rem;
+}
+.academics h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+
+  letter-spacing: 0.02em;
+  margin-top: 5rem;
+  margin-bottom: 1.3rem;
+  color: #000000;
+}
+.academics p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  margin-top: 1rem;
+  letter-spacing: 0.045em;
+
+  color: #343434;
+}
+
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.academic-cards {
+  margin: 4rem 8rem 4rem 8rem;
+}
+.academic-cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 6px;
+  margin: 1.5rem 0 0 0;
+}
+.card .imagecard {
+  box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+}
+
+.academic-cards .card .imagecard img {
+  width: 368px;
+  height: 264px;
+}
+.card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  text-align: center;
+  letter-spacing: 0.045em;
+
+  color: #343434;
+}
+
+/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
+.customNextBtn {
+  position: absolute;
+  top: 45%;
+  right: 103%;
+}
+.customPrevBtn {
+  position: absolute;
+  top: 45%;
+  left: 103%;
+}
+/* DOTS FOR CAROUSEL */
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 12px;
+}
+.owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: orange;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+@media (max-width: 1000px) {
+  .academics h2 {
+    font-size: 18px;
+  }
+  .academics p {
+    font-size: 14px;
+  }
+  .academics {
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .academic-cards {
+    margin: 3rem 5rem 3 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .heading h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+  .academics {
+    margin: 0 2rem;
+  }
+  .academics p {
+    font-size: 14px;
+    line-height: 130.5%;
+  }
+  .owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 7px;
+    height: 7px;
+    margin: 5px 4px;
+  }
+  .academic-cards {
+    margin: 1rem 3rem 1rem 3rem;
+  }
+}
