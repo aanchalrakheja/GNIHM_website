@@ -17,6 +17,10 @@ body {
 .nav-link a:hover{
     color:white;
 }
+#nav{
+  padding-right:10rem;
+  padding-left:10rem;
+}
 
   .heading {
     display: flex;
