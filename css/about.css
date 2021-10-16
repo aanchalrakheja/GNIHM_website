@@ -268,6 +268,7 @@ nav .toggle-collapse .toggle-icons i {
   justify-content: center;
 }
 .message-heading h2 {
+  color: #334756;
   font-size: 28px;
   font-weight: 600;
   margin-top: -60px;
@@ -411,6 +412,12 @@ nav .toggle-collapse .toggle-icons i {
   color: #343434;
   margin: 10px 0px;
 }
+
+.faculty-heading p{
+  color: #334756;
+}
+
+
 
 
 /*facilities section*/
