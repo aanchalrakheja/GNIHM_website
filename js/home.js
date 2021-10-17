@@ -76,29 +76,72 @@ $(document).ready(function () {
     },
   });
 });
-$(document).ready(function () {
-  $(".news-carousel").owlCarousel({
-    nav: true,
-    dots: true,
-    margin: 10,
-    navText: [
-      "<img class='customNextBtn' src='./assets/facilities/leftarrow.png'/>",
-      "<img class='customPrevBtn' src='./assets/facilities/rightarrow.png'/>",
-    ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      550: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
-  });
-});
+// $(document).ready(function () {
+//   $("#news-carousel").owlCarousel({
+//     nav: true,
+//     dots: true,
+//     margin: 10,
+//     navText: [
+//       "<img class='customNextBtn' src='./assets/facilities/leftarrow.png'/>",
+//       "<img class='customPrevBtn' src='./assets/facilities/rightarrow.png'/>",
+//     ],
+//     responsiveClass: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//       550: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//       1000: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//     },
+//   });
+// });
+
+// $(document).ready(function () {
+//   $("#awards-carousel").owlCarousel({
+//     nav: true,
+//     dots: true,
+//     margin: 10,
+//     navText: [
+//       "<img class='customNextBtn' src='./assets/facilities/leftarrow.png'/>",
+//       "<img class='customPrevBtn' src='./assets/facilities/rightarrow.png'/>",
+//     ],
+//     responsiveClass: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//       550: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//       1000: {
+//         items: 1,
+//         dots:true,
+//         mouseDrag:true,
+//         margin:10
+//       },
+//     },
+//   });
+// });
+
 
 $(document).ready(function () {
   $(".testimonial-carousel").owlCarousel({
@@ -185,3 +228,54 @@ $(document).ready(function () {
     },
   });
 });
+
+
+// news carousel
+var newscards=document.getElementsByClassName("news-card");
+var awardscards=document.getElementsByClassName("awards-card");
+var newscount=0;
+var awardscount=0;
+function newsCarousel(num)
+{
+  newscount+=num;
+  if(newscount>=newscards.length)
+  {
+    newscount=0;
+  }
+  if(newscount<0)
+  {
+    newscount=newscards.length-1
+  }
+  for(let i=0;i<newscards.length;i++)
+  {
+    newscards[i].style.display="none";
+  }
+  newscards[newscount].style.display="block";
+}
+
+function awardsCarousel(num)
+{
+  awardscount+=num;
+  if(awardscount>=awardscards.length)
+  {
+    awardscount=0;
+  }
+  if(awardscount<0)
+  {
+    awardscount=awardscards.length-1
+  }
+  for(let i=0;i<awardscards.length;i++)
+  {
+    awardscards[i].style.display="none";
+  }
+  awardscards[awardscount].style.display="block";
+}
+
+newsCarousel(0);
+awardsCarousel(0);
+setInterval(()=>{
+  newsCarousel(1);
+},5500);
+setInterval(()=>{
+  awardsCarousel(1);
+},5500);
