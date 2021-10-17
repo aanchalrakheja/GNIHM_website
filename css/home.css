@@ -413,6 +413,7 @@
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.02em;
+  text-align:left;
 }
 
 .sub-wrap-right .txt h1 {
@@ -528,91 +529,93 @@
 }
 
 /* AWARDS AND NEWS SECTION */
-.news {
-  width: 50vw;
+.news-and-awards{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin: 2rem 8rem;
+  margin-top:80px;
 }
-/*carousel*/
-.newscards {
-  margin: 2rem 8rem 0 8rem;
+/* news section */
+.news-section,.awards-section{
+  width:45%;
+  box-sizing: border-box;
 }
-/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
-.newscards .newscard {
+.news-carousel,.awards-carousel{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  border-radius: 6px;
-  margin: 1.5rem;
-  padding: 3rem;
-  box-shadow: 0px 0px 13px 2px rgba(89, 89, 89, 0.25);
-  border-radius: 6px;
+  overflow:hidden;
 }
-
-.newscards .newscard img {
-  width: 402.66px;
-  height: 212.14px;
+.news-card,.awards-card{
+  width:100%;
+  height: 300px;
+  margin-top:1rem;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  transition: all 0.3 ease-out;
+  animation-name: fade;
+  animation-duration: 3s;
+  position: relative;
 }
-.newscard p {
+@keyframes fade {
+  from {
+    opacity: 0.5;
+    transform:scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+.news-card img,.awards-card img{
+  width:80%;
+}
+.news-headline,.awards-headline{
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 170.5%;
-  /* or 24px */
-  margin-top: 1%;
+  font-size:14px;
+  color:black;
   text-align: center;
-  letter-spacing: 0.04em;
-
-  color: #6c6c6c;
+  font-weight:600;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
 }
-.newscard h2 {
+.news-desc,.awards-desc{
+  font-size:12px;
+  color:#343434;
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight:500;
   text-align: center;
-  margin-top: 5%;
-  /* identical to box height, or 21px */
-  color: #212121;
+  padding:0rem 1rem;
+}
+.news-date{
+  font-family:"Poppins";
+  font-size:12px;
+  font-weight:300;
+  color:#6c6c6c;
+  text-align:center;
+  margin:0.5rem 0rem;
 }
 
-/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
-.customNextBtn {
-  position: absolute;
-  top: 45%;
-  right: 103%;
-}
-.customPrevBtn {
-  position: absolute;
-  top: 45%;
-  left: 103%;
-}
-/* DOTS FOR CAROUSEL */
-.owl-theme .owl-controls .owl-page span {
-  background: none repeat scroll 0 0 #869791;
-  border-radius: 20px;
-  display: block;
-  height: 12px;
-  margin: 5px 7px;
-  opacity: 0.5;
-  width: 12px;
-}
-.owl-theme .owl-dots {
-  text-align: center;
+@media screen and (max-width:1100px)
+{
+  .news-section,.awards-section{
+    width:90%;
+    box-sizing: border-box;
+    margin:auto;
+  }
+  .awards-section{
+    margin-top:3rem;
+  }
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: orange;
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #d6d6d6;
-  display: block;
-  transition: opacity 0.2s ease;
-  border-radius: 30px;
+@media screen and (max-width:500px)
+{
+  .news-and-awards{
+    margin:0px;
+    margin-top:80px;
+  }
 }
 
 /* testimonial */
@@ -770,6 +773,27 @@
   );
   transition: 0.3s;
 }
+.gallery-section .cent a {
+  display: inline-block;
+  color: #ff7b31;
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ff7b31;
+  transition: all 0.3s ease;
+}
+
+.gallery-section .cent a:hover {
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   .gallery-section {
     margin: 0rem 5rem 0 5rem;
@@ -910,6 +934,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .sub-wrap-right h3 {
+    text-align:center;
   }
 }
 
