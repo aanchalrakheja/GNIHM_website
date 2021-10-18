@@ -1,5 +1,17 @@
-/* student support card */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
 
   
 
@@ -45,7 +57,15 @@
   }
 
 
+
+
+  .faculty, .testimonal{
+    margin-top: -3%;
+
+  }
+
   .testimonal{
+    margin-bottom: -5%;
     max-width: 100vw;
     overflow: hidden;
   }
@@ -112,6 +132,7 @@
   text-align: center;
   }
   .recruiters{
+    margin-top: 3%;
  
   }
   
@@ -156,6 +177,7 @@
 .brand{
    display: flex;
    flex-direction: column;
+   margin-top: -6%;
 
   }
   /*carousel*/
@@ -238,9 +260,9 @@
   .text-conatiner{
     width: 100%;
   }
+ 
   
 }
-
 
 
 @media screen and (max-width: 500px){
@@ -253,6 +275,18 @@
   .recruiters-img-div .card{
     margin: 5% 2%;
   }
+
+  .faculty {
+    margin-top: -20%;
+  }
+  .testimonal{
+    margin-top: -30%;
+    margin-bottom: -20%;
+  }
+  .brand{
+    margin-top: -30%;
+  }
+  
 
   
 
@@ -275,12 +309,12 @@
 
 .PrevBtn {
   position: absolute;
-  top: -150%;
+  top: -250%;
   left: 700%;
 }
 .NextBtn {
   position: absolute;
-  top: -150%;
+  top: -250%;
   left: 700%;
 }
 /* DOTS FOR CAROUSEL */

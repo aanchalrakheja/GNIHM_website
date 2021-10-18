@@ -23,11 +23,11 @@ $(document).ready(function () {
     loop: true,
     margin: 0,
     nav: true,
-    dots: true,
+    dots: false,
     responsiveClass: true,
     navText: [
-      "<img class='customNextBtn' src='../assets/Facilities/leftarrow.png'/>",
-      "<img class='customPrevBtn' src='../assets/Facilities/rightarrow.png'/>",
+      "<img class='customNextBtn' src='assets/Facilities/leftarrow.png'/>",
+      "<img class='customPrevBtn' src='assets/Facilities/rightarrow.png'/>",
     ],
     responsive: {
       0: {
