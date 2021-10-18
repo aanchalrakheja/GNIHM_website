@@ -56,7 +56,7 @@
     align-items: center;
     margin: 0% 10%;
     background: #FF7B31;
-    padding: 2% 6%;
+    padding: 2% 2%;
     color: white;
     overflow-x: hidden;
 
@@ -66,8 +66,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0% 3%;
-    width:100%;
+    width:30%;
   }
 
   .img-container p{
@@ -92,6 +91,7 @@
   }
 
   .text-container{
+    width: 80%;
     padding: 0% 3%;
     display: flex;
     flex-direction: column;
@@ -134,11 +134,13 @@
   .recruiters-img-div{
     margin: 2% 5%;
     display: flex;
+    
     justify-content:center;
     align-items: center;
 
   }
   .recruiters-img-div .card{
+    width: 60%;
     margin:0% 2%;
   }
   .recruiters-img-div .container p{
@@ -229,7 +231,31 @@
   .main-recruiter .question{
     left: -15%
   }
+
+  .img-container{
+    width: 100%;
+  }
+  .text-conatiner{
+    width: 100%;
+  }
   
+}
+
+
+
+@media screen and (max-width: 500px){
+  .recruiters-img-div{
+    flex-direction: column;
+    margin: 0%;
+    
+  }
+
+  .recruiters-img-div .card{
+    margin: 5% 2%;
+  }
+
+  
+
 }
 
 
@@ -244,6 +270,17 @@
 .customNextBtn {
   position: absolute;
   top: -350%;
+  left: 700%;
+}
+
+.PrevBtn {
+  position: absolute;
+  top: -150%;
+  left: 700%;
+}
+.NextBtn {
+  position: absolute;
+  top: -150%;
   left: 700%;
 }
 /* DOTS FOR CAROUSEL */

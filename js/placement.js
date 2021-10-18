@@ -58,8 +58,8 @@ $(document).ready(function () {
     nav: true,
     dots: true,
     navText: [
-      "<img class='customPrevBtn' src='./assets/placements/previous.svg'/>",
-      "<img class='customNextBtn' src='./assets/placements/next.svg'/>",
+      "<img class='PrevBtn' src='assets/placements/previous.svg'/>",
+      "<img class='NextBtn' src='assets/placements/next.svg'/>",
     ],
     responsiveClass: true,
     responsive: {
