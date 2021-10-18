@@ -13,6 +13,9 @@
   background-attachment: fixed;
   font-family: "Poppins", sans-serif;
 }
+.home-content {
+  margin-top: 10%;
+}
 
 .home .max-width {
   /* width: 500px; */
@@ -70,9 +73,8 @@
 }
 .right {
   display: grid;
-  float: right;
+
   padding: 0px 100px;
-  justify-self: right;
 }
 .strip1 {
   width: 207px;
@@ -90,8 +92,11 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+
+  grid-template-columns: 0.7fr 1fr;
   padding-left: 9rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-content .left .text p {
@@ -188,9 +193,6 @@
   text-align: center;
 }
 
-.main-area {
-  padding: 0em 10em;
-}
 .cards p {
   margin-bottom: 1.4em;
   font-family: "Poppins", sans-serif;
@@ -204,31 +206,34 @@
 }
 
 .thumbnail img {
-  position: relative;
-  display: block;
   width: 100%;
-  height: auto;
-  z-index: auto;
   border-radius: 6px;
 }
 .triangle {
   position: absolute;
   height: 85px;
-  width: 266px;
+  width: 100%;
   border-radius: 0px;
   z-index: 1;
   transform: translateY(-100%);
   background-color: #ff7d31bd;
-  clip-path: polygon(0 29%, 0% 100%, 100% 120%);
+  clip-path: polygon(0 29%, 0% 100%, 100% 100%);
 }
 
 /* Card Based Layout - Base styles */
-.main-area {
-  padding: 0 10%;
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  height: 100%;
+  width: 100%;
 }
 .cards {
-  background: white;
-  justify-content: space-evenly;
+  margin: 0 8rem 0 8rem;
 }
 .card a {
   color: black;
@@ -274,82 +279,21 @@
   background-color: #ff7b31;
   color: #fff;
 }
+@media (max-width: 900px) {
+  .cards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    margin: 0rem 3rem 0 3rem;
+  }
+}
 
 /* Flexbox */
 @media screen and (min-width: 50em) {
   .hover-underline-animation:after {
     background-color: #fff;
-  }
-
-  .outer-wrap {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .main-area {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .cards {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: -1em;
-  }
-
-  .card {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex: 0 1 calc(50% - 0.5em);
-    -ms-flex: 0 1 calc(50% - 0.5em);
-    flex: 0 1 calc(50% - 0.5em);
-    margin-bottom: 4em;
-  }
-}
-
-@media screen and (max-width: 39.9em) {
-  .main-area {
-    padding: 0 10%;
-  }
-  .card {
-    margin-bottom: 1.4em;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .cards {
-    margin-top: inherit;
-  }
-
-  .card {
-    -webkit-flex: 0 1 calc(25% - 1em);
-    -ms-flex: 0 1 calc(25% - 1em);
-    flex: 0 1 calc(25% - 1em);
-    margin-bottom: 4em;
   }
 }
 
@@ -416,6 +360,97 @@
   color: #fff;
 }
 
+/*WHY GNIHM*/
+.why {
+  padding: 4rem 8rem 4rem 8rem;
+  background-color: #ff7b31;
+}
+.why .titl {
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  color: #fff;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.why p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  color: #fff;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper-1 {
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-wrap-right h3 {
+  font-size: 14px;
+  /* padding-right: 5px; */
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #000;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align:left;
+}
+
+.sub-wrap-right .txt h1 {
+  font-size: 18px;
+  /* padding-right: 5px; */
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+@media (max-width: 1185px) {
+  .wrapper-2 {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 790px) {
+  .wrapper-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .why {
+    padding: 4rem 5rem 4rem 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .why {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+  .wrapper-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* virtual campus tour section */
 .campus .title {
   font-family: Poppins;
   font-size: 28px;
@@ -464,9 +499,8 @@
 }
 .campus .campuscards .campuscard img {
   width: 322px;
-  height: 359.78px;
+  height: 320px;
   transition: transform 0.2s;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .campus .campuscards .campuscard img:hover {
@@ -480,70 +514,191 @@
   flex-direction: column;
   box-shadow: rgba(142, 142, 142, 0.25);
   border-radius: 6px;
-  height: 320px;
+  height: 100%;
   width: 100%;
+}
+@media (max-width: 900px) {
+  .campus .campuscards {
+    margin: 2rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .campus .campuscards {
+    margin: 2rem 3rem 0 3rem;
+  }
 }
 
 /* AWARDS AND NEWS SECTION */
-.news {
-  width: 50vw;
+.news-and-awards{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin: 2rem 8rem;
+  margin-top:80px;
 }
-/*carousel*/
-.newscards {
+/* news section */
+.news-section,.awards-section{
+  width:45%;
+  box-sizing: border-box;
+}
+.news-carousel,.awards-carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow:hidden;
+}
+.news-card,.awards-card{
+  width:100%;
+  height: 300px;
+  margin-top:1rem;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  transition: all 0.3 ease-out;
+  animation-name: fade;
+  animation-duration: 3s;
+  position: relative;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+    transform:scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+.news-card img,.awards-card img{
+  width:80%;
+}
+.news-headline,.awards-headline{
+  font-family: "Poppins";
+  font-size:14px;
+  color:black;
+  text-align: center;
+  font-weight:600;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+.news-desc,.awards-desc{
+  font-size:12px;
+  color:#343434;
+  font-family: "Poppins";
+  font-weight:500;
+  text-align: center;
+  padding:0rem 1rem;
+}
+.news-date{
+  font-family:"Poppins";
+  font-size:12px;
+  font-weight:300;
+  color:#6c6c6c;
+  text-align:center;
+  margin:0.5rem 0rem;
+}
+
+@media screen and (max-width:1100px)
+{
+  .news-section,.awards-section{
+    width:90%;
+    box-sizing: border-box;
+    margin:auto;
+  }
+  .awards-section{
+    margin-top:3rem;
+  }
+}
+
+@media screen and (max-width:500px)
+{
+  .news-and-awards{
+    margin:0px;
+    margin-top:80px;
+  }
+}
+
+/* testimonial */
+.common-head {
+  font-family: "Poppins";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.common-subhead {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.testimonialcards {
   margin: 2rem 8rem 0 8rem;
 }
 /* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
-.newscards .newscard {
+.testimonialcards .testimonialcard {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   border-radius: 6px;
-  margin: 1.5rem;
-  padding: 3rem;
-  box-shadow: 0px 0px 13px 2px rgba(89, 89, 89, 0.25);
-  border-radius: 6px;
+  margin: 1.5rem 0;
+  height: 320px;
+  width: 100%;
+}
+.img-div {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialcards .testimonialcard #face {
+  width: 114px !important;
+  height: 114px;
+  border-radius: 50% 50%;
 }
 
-.newscards .newscard img {
-  width: 402.66px;
-  height: 212.14px;
+.img-div #bckstyle {
+  position: absolute;
+  z-index: -1;
+  width: 180px;
+  height: 150px;
 }
-.newscard p {
+
+.testimonialcards .testimonialcard h2 {
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  color: #343434;
+}
+.testimonialcard p {
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 170.5%;
   /* or 24px */
   margin-top: 1%;
+  width: 90%;
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #6c6c6c;
-}
-.newscard h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 5%;
-  /* identical to box height, or 21px */
-  color: #212121;
+  color: #343434;
 }
 
-/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
-.customNextBtn {
-  position: absolute;
-  top: 45%;
-  right: 103%;
-}
-.customPrevBtn {
-  position: absolute;
-  top: 45%;
-  left: 103%;
-}
 /* DOTS FOR CAROUSEL */
 .owl-theme .owl-controls .owl-page span {
   background: none repeat scroll 0 0 #869791;
@@ -554,23 +709,268 @@
   opacity: 0.5;
   width: 12px;
 }
-.owl-theme .owl-dots {
-  text-align: center;
+
+@media (max-width: 900px) {
+  .testimonialcards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .testimonialcards {
+    margin: 0rem 3rem 0 3rem;
+  }
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: orange;
+/* gallery */
+.gallery-section {
+  margin: 2rem 8rem;
 }
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #d6d6d6;
+.gallery {
+  margin-top: 3rem;
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
   display: block;
-  transition: opacity 0.2s ease;
-  border-radius: 30px;
+  width: 100%;
+  transition: 0.3s;
 }
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+.gallery-section .cent a {
+  display: inline-block;
+  color: #ff7b31;
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #ff7b31;
+  transition: all 0.3s ease;
+}
+
+.gallery-section .cent a:hover {
+  border: 2px solid #ff7b31;
+  background-color: #ff7b31;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .gallery-section {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .gallery-section {
+    margin: 0rem 1rem 0 1rem;
+  }
+}
+
+/* alumni section */
+
+.alumnicards {
+  margin: 2rem 8rem 0 8rem;
+}
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.alumnicards .alumnicard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ff7b31;
+  padding: 4%;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+.alumnicard h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  color: #343434;
+}
+.alumnicard p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170.5%;
+  /* or 24px */
+  margin-top: 1%;
+  width: 90%;
+
+  letter-spacing: 0.04em;
+
+  color: #343434;
+}
+.maingrid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.maingrid .profile img {
+  width: 143px !important ;
+  height: 143px;
+  border-radius: 50%;
+}
+.maingrid .profile h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+  text-align: center;
+  color: #ffffff;
+}
+
+.maingrid .story h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+
+  /* identical to box height, or 26px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.maingrid .story p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 141.5%;
+  letter-spacing: 0.04em;
+  color: white;
+}
+@media (max-width: 900px) {
+  .alumnicards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .alumnicards {
+    margin: 0rem 3rem 0 3rem;
+  }
+  .maingrid .story p {
+    font-size: 14px;
+  }
+  .maingrid .story h1 {
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 1250px) {
+  .maingrid {
+    display: block;
+    text-align: center;
+  }
+  .alumnicard p {
+    width: 100%;
+  }
+  .maingrid .story {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sub-wrap-right h3 {
+    text-align:center;
+  }
+}
+
+/* placement section */
+
+.placementcards {
+  margin: 2rem 8rem 0 8rem;
+}
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.placementcards .placementcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  height: 100%;
+  width: 100%;
+}
+.placementcard img {
+  height: 100px;
+  width: 50% !important;
+}
+@media (max-width: 900px) {
+  .placementcards {
+    margin: 2rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .placementcards {
+    margin: 1rem 3rem 0 3rem;
+  }
+}
+
 /*--------------------------Responsive media query-------------------------------*/
 
 @media (max-width: 1322px) {
@@ -581,16 +981,55 @@
 }
 
 @media (max-width: 1104px) {
-  .about-content .right img {
-    height: 350px;
-    width: 350px;
+  .campus .campuscards .campuscard img:hover {
+    box-shadow: none;
+    transform: scale(1);
   }
+  .about-content {
+    margin: 2rem 8rem 0rem 8rem;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content .left .text h1 {
+    text-align: center;
+  }
+
+  .about-content .left p {
+    text-align: center;
+  }
+  .cen {
+    text-align: center;
+  }
+
   .strip1,
   .strip2 {
     display: none;
   }
-}
 
+  .right {
+    justify-self: center;
+    grid-row: 1;
+    padding: 0;
+  }
+
+  .about-content .column img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .about-content {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-content {
+    margin: 0rem 3rem 0 3rem;
+  }
+}
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
@@ -628,7 +1067,6 @@
   .about-content .right {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
   }
   .about-content .left {
     flex: 100%;
@@ -786,18 +1224,7 @@
     font-size: 20px;
     line-height: 38px;
   }
-  .wrapper-1 {
-    grid-template-columns: 1fr;
-  }
-  .wrapper-2 {
-    grid-template-columns: 1fr;
-  }
-  .wrapper-2 .sub-wrap-left img {
-    height: 100%;
-    width: 80%;
-    min-width: none;
-    object-fit: cover;
-  }
+
   #know_more_us p {
     margin: 0px 20px;
     font-size: 14px;
@@ -809,16 +1236,15 @@
   .know_more #know_more_us .cent a {
     font-size: 14px;
   }
-}
-@media (max-width: 900px) {
-  .campus .campuscards {
-    margin: 5rem 5rem;
+  .common-head {
+    font-size: 20px;
+  }
+  .common-subhead {
+    font-size: 14px;
   }
 }
+
 @media (max-width: 500px) {
-  .campus .campuscards {
-    margin: 5rem 5rem;
-  }
   .campus p {
     font-size: 14px;
   }
@@ -826,19 +1252,156 @@
     font-size: 20px;
   }
   .campus .campuscards .campuscard img {
-    width: 500px;
-    height: 350.78px;
-    transition: transform 0.2s;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding-bottom: 2rem;
   }
 }
-@media (max-width: 900px) {
-  .campuscards {
-    margin: 0rem 5rem 0 5rem;
-  }
+
+.about-section,
+.academy,
+.knowmore,
+.campus,
+.testimonial,
+.gallery-section,
+.alumni-stories,
+.placement {
+  margin-top: 80px;
 }
-@media (max-width: 500px) {
-  .campuscards {
-    margin: 0rem 3rem 0 3rem;
+.know_more {
+  margin-top: 80px;
+  padding: 5%;
+}
+/* footer css */
+
+footer {
+  margin-top: 4rem;
+}
+footer .upperfooter {
+  padding: 3rem 2rem 0 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/home/footerbck.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contacts {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.call,
+.mail {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.upperfooter p,
+h2,
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #6c6c6c;
+}
+.upperfooter p {
+  width: 50%;
+}
+footer .lowerfooter {
+  padding: 4rem 4rem 2rem 4rem;
+  background-color: #ff7b31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lowerfooter .icontray {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.icontray h1 {
+  color: white;
+  margin-bottom: 50%;
+}
+.lowerfooter .footer-site-links1 {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1% 4%;
+  justify-content: center;
+}
+.lowerfooter .footer-site-links2 {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1% 4%;
+  justify-content: center;
+}
+.footer-site-links1 a,
+.footer-site-links2 a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+}
+footer .lowerfooter .copyright-text h1 {
+  margin-top: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  .upperfooter p {
+    width: 80%;
+  }
+  .contacts {
+    display: block;
+  }
+  .upperfooter p,
+  h2,
+  h3 {
+    font-size: 14px;
+  }
+  footer .lowerfooter {
+    padding: 2rem 4rem 2rem 4rem;
+  }
+  .lowerfooter .footer-site-links1 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem 1rem;
+  }
+  .lowerfooter .footer-site-links2 {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem 1rem;
+  }
+  .lowerfooter .footer-site-links2 a {
+    margin-right: 1.7rem;
+  }
+  .footer-site-links1 a,
+  .footer-site-links2 a {
+    font-size: 14px;
   }
 }

@@ -199,6 +199,9 @@ nav .toggle-collapse .toggle-icons i {
   nav .toggle-collapse {
     display: initial;
   }
+  .nav-brand img{
+    width:18%;
+  }
 }
 
 @media screen and (min-width: 50em) {
