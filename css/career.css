@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 body {
     overflow-x: hidden;
@@ -123,10 +124,10 @@ body {
       text-align:left;
       margin:2rem 10%;
   }
-  ul{
+  .important-notes ul{
       margin:0px 10%;
   }
-  ul li{
+  .important-notes ul li{
     font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
@@ -194,3 +195,137 @@ body {
           padding:0.5rem 1rem;
       }
 }
+
+/* footer section */
+#footer {
+  margin-top: 2rem;
+  background-color: #ff7b31;
+  cursor: pointer;
+  padding: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+#footer .footer-details .detail h1,
+.important-links h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0.2rem;
+  /* identical to box height */
+
+  color: #424242;
+}
+.imp-links {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: 1rem;
+}
+.social_footer_ul {
+  margin-top: 0.5rem;
+  padding-left:0px;
+}
+.footer-details {
+  display: grid;
+  justify-content: center;
+}
+.logo-text,
+#footer-address {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 0.3rem;
+  color: #ffffff;
+}
+
+#footer .footer-details .detail h2,
+.important-links a {
+  margin-bottom: 0.8rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+}
+.important-links .imp-links dd {
+  margin-top: 0.5rem;
+}
+#footer-logo {
+  text-align: center;
+}
+#footer-logo .brand img {
+  width: 30%;
+}
+
+#copyright-text {
+  font-family: "Poppins";
+  height: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 1.6rem;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  #footer-logo {
+    grid-column: 1/5;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #footer-logo .brand img {
+    width: 18%;
+  }
+  .footer-details {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 500px) {
+  #footer {
+    padding: 2rem 1rem;
+  }
+  .footer-grid {
+    display: block;
+    text-align: center;
+  }
+  .footer-details {
+    margin-top: 1rem;
+  }
+  #footer .detail {
+    margin-top: 1rem;
+  }
+  .important-links {
+    margin-top: 2rem;
+  }
+  #footer .footer-details .detail h2,
+  .important-links a {
+    font-size: 14px;
+  }
+  #footer-logo .brand img {
+    width: 23%;
+  }
+
+  #footer-address {
+    font-size: 14px;
+  }
+
+  #copyright-text {
+    font-size: 14px;
+  }
+}
+
+/* footer */
