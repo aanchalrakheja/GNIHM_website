@@ -142,7 +142,6 @@ $(document).ready(function () {
 //   });
 // });
 
-
 $(document).ready(function () {
   $(".testimonial-carousel").owlCarousel({
     nav: true,
@@ -229,53 +228,51 @@ $(document).ready(function () {
   });
 });
 
-
 // news carousel
-var newscards=document.getElementsByClassName("news-card");
-var awardscards=document.getElementsByClassName("awards-card");
-var newscount=0;
-var awardscount=0;
-function newsCarousel(num)
-{
-  newscount+=num;
-  if(newscount>=newscards.length)
-  {
-    newscount=0;
+var newscards = document.getElementsByClassName("news-card");
+var awardscards = document.getElementsByClassName("awards-card");
+var newscount = 0;
+var awardscount = 0;
+function newsCarousel(num) {
+  newscount += num;
+  if (newscount >= newscards.length) {
+    newscount = 0;
   }
-  if(newscount<0)
-  {
-    newscount=newscards.length-1
+  if (newscount < 0) {
+    newscount = newscards.length - 1;
   }
-  for(let i=0;i<newscards.length;i++)
-  {
-    newscards[i].style.display="none";
+  for (let i = 0; i < newscards.length; i++) {
+    newscards[i].style.display = "none";
   }
-  newscards[newscount].style.display="block";
+  newscards[newscount].style.display = "block";
 }
 
-function awardsCarousel(num)
-{
-  awardscount+=num;
-  if(awardscount>=awardscards.length)
-  {
-    awardscount=0;
+function awardsCarousel(num) {
+  awardscount += num;
+  if (awardscount >= awardscards.length) {
+    awardscount = 0;
   }
-  if(awardscount<0)
-  {
-    awardscount=awardscards.length-1
+  if (awardscount < 0) {
+    awardscount = awardscards.length - 1;
   }
-  for(let i=0;i<awardscards.length;i++)
-  {
-    awardscards[i].style.display="none";
+  for (let i = 0; i < awardscards.length; i++) {
+    awardscards[i].style.display = "none";
   }
-  awardscards[awardscount].style.display="block";
+  awardscards[awardscount].style.display = "block";
 }
 
 newsCarousel(0);
 awardsCarousel(0);
-setInterval(()=>{
+setInterval(() => {
   newsCarousel(1);
-},5500);
-setInterval(()=>{
+}, 5500);
+setInterval(() => {
   awardsCarousel(1);
-},5500);
+}, 5500);
+
+const imageGallery = document.getElementById("image-gallery");
+const imageButton = document.getElementById("image-button");
+function callImages() {
+  imageButton.classList.add("active");
+  imageGallery.style.display = "flex";
+}
