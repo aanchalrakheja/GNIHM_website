@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GNIHM</title>
-    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css" />
@@ -36,58 +36,76 @@
   </head>
 
   <body>
-    <nav class="nav flex-row">
-      <div class="nav-menu">
-        <div class="nav-brand">
-          <img src="./assets/gnihm_logo.png" alt="" />
+    <div class="container justify-content-center">
+      <nav
+        class="
+          navbar navbar-custom navbar-expand-lg navbar-dark
+          shadow-5-strong
+          fixed-top
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/home/gnihm_logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">Academics</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">Placements</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item px-4 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Blogs</a></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="toggle-collapse">
-        <div class="toggle-icons text-black">
-          <span><i class="fas fa-bars"></i></span>
-          <span class="icon"></span>
-        </div>
-      </div>
-      <div class="navbar">
-        <ul class="nav-items flex-row">
-          <li class="nav-link">
-            <a href="#" class="text-black hover-underline-animation">Home</a>
-          </li>
-          <li class="nav-link">
-            <a href="./about.html" class="text-black hover-underline-animation"
-              >About</a
-            >
-          </li>
-          <li class="nav-link">
-            <a
-              href="./academics.html"
-              class="text-black hover-underline-animation"
-              >Academics</a
-            >
-          </li>
-          <li class="nav-link">
-            <a
-              href="./placement.html"
-              class="text-black hover-underline-animation"
-              >Placements</a
-            >
-          </li>
-          <li class="nav-link">
-            <a
-              href="./contact.html"
-              class="text-black hover-underline-animation"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="social text-black">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- HOME SECTION START -->
     <section class="home" id="home">
