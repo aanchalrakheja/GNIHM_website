@@ -90,11 +90,11 @@
         <div class="modal">
           <div class="close-modal">&times;</div>
           <div class="navigate">
-            <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="Navigate(1)">
+            <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="NavigateImages(-1)">
           </div>
           <img src="" alt="expanded-img" id="modal-img">
           <div class="navigate">
-            <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="Navigate(-1)">
+            <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="NavigateImages(1)">
           </div>
         </div>
 
@@ -110,6 +110,46 @@
         <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-image" onclick="imageModal(8)">
 
     </div>    
+
+    <!-- video gallery -->
+    <div id="video-gallery">
+      <div class="section">
+          <h2 class="title">Video Gallery</h2>
+      </div>
+      
+      <!-- modal -->
+      <div class="modal">
+        <div class="close-modal">&times;</div>
+        <div class="navigate">
+          <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="NavigateVideo(-1)">
+        </div>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <div class="navigate">
+          <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="NavigateVideo(1)">
+        </div>
+      </div>
+
+      <!-- thumbnail for videos -->
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(0)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(1)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(2)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(3)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(4)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(5)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(6)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(7)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(8)">
+
+  </div>    
+
 
 
   <footer>
