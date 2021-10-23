@@ -43,7 +43,7 @@ a {
   color: white;
   height: 50vh;
   width: 100vw;
-  background-image: url(../assets/Facilities/backimg_facilities.png);
+  background-image: url(../assets/facilities/backimg_facilities.png);
 }
 .facilitypage .heading h1 {
   font-size: 48px;

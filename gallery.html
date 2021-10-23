@@ -17,38 +17,43 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 
 <body>
-  <nav class="nav flex-row" id="nav">
+
+  <!--Nav bar-->
+  <nav class="nav flex-row">
     <div class="nav-menu">
       <div class="nav-brand">
-        <img src="./assets/gnihm_logo.png" alt="" />
+        <img src="./assets/about/gnihm_logo.png" alt="" />
       </div>
     </div>
+
+    <!--mobile navbar icon-->
     <div class="toggle-collapse">
       <div class="toggle-icons text-black">
         <span><i class="fas fa-bars"></i></span>
         <span class="icon"></span>
       </div>
     </div>
+    <!--Navbar items-->
     <div class="navbar">
-      <ul class="nav-items" style="display:flex; ">
+      <ul class="nav-items flex-row">
         <li class="nav-link">
-          <a href="#" class="text-black hover-underline-animation">Home</a>
+          <a href="index.html" class="text-black hover-underline-animation">Home</a>
         </li>
         <li class="nav-link">
-          <a href="#" class="text-black hover-underline-animation">About</a>
+          <a href="about.html" class="text-black hover-underline-animation">About</a>
         </li>
         <li class="nav-link">
-          <a href="#" class="text-black hover-underline-animation">Academics</a>
+          <a href="academics.html" class="text-black hover-underline-animation">Academics</a>
         </li>
         <li class="nav-link">
-          <a href="#" class="text-black hover-underline-animation">Placements</a>
+          <a href="placement.html" class="text-black hover-underline-animation">Placements</a>
         </li>
         <li class="nav-link">
-          <a href="#" class="text-black hover-underline-animation">Contact Us</a>
+          <a href="contact.html" class="text-black hover-underline-animation">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -79,389 +84,72 @@
     <div id="image-gallery">
         <div class="section">
             <h2 class="title">Image Gallery</h2>
+        </div>
+        
+        <!-- modal -->
+        <div class="modal">
+          <div class="close-modal">&times;</div>
+          <div class="navigate">
+            <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="NavigateImages(-1)">
           </div>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image1">
-            <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-1.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
+          <img src="" alt="expanded-img" id="modal-img">
+          <div class="navigate">
+            <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="NavigateImages(1)">
+          </div>
         </div>
 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image2">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
+        <!-- images -->
+        <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-image" onclick="imageModal(0)">
+        <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-image" onclick="imageModal(1)">
+        <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-image" onclick="imageModal(2)">
+        <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-image" onclick="imageModal(3)">
+        <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-image" onclick="imageModal(4)">
+        <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-image" onclick="imageModal(5)">
+        <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-image" onclick="imageModal(6)">
+        <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-image" onclick="imageModal(7)">
+        <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-image" onclick="imageModal(8)">
 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image3">
-            <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image3Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-3.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image4">
-            <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-1.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image5">
-            <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image5" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-3.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image6">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image6" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image7">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image7" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image8">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image8" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image9">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image9" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image10">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image10" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image11">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image11" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#image12">
-            <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="img-fluid">
-        </button>
-        <div class="modal fade" id="image12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image12" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <img src="./assets/student-support/upcoming-event-2.svg" class="img-fluid">
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
+    </div>    
 
     <!-- video gallery -->
-
     <div id="video-gallery">
-        <div class="section">
-            <h2 class="title">Video Gallery</h2>
+      <div class="section">
+          <h2 class="title">Video Gallery</h2>
+      </div>
+      
+      <!-- modal -->
+      <div class="modal">
+        <div class="close-modal">&times;</div>
+        <div class="navigate">
+          <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="NavigateVideo(-1)">
         </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <div class="navigate">
+          <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="NavigateVideo(1)">
         </div>
+      </div>
 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
+      <!-- thumbnail for videos -->
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(0)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(1)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(2)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(3)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(4)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(5)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(6)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(7)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(8)">
 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
+  </div>    
 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#video2">
-          <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
-        </button>
-        <div class="modal fade" id="video2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="text-align: center;">
-                          <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
-</iframe>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-    </div>
-  </div>
 
 
   <footer>
@@ -543,7 +231,8 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
     </section>
   </footer>
 
-  <script src="./js/gallery.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/student_support.js"></script>
+  <script src="./js/modal.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </body>
 </html>
