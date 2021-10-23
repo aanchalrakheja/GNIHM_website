@@ -1,22 +1,3 @@
-const toggleCollapse = document.querySelector(".toggle-collapse span");
-const nav = document.querySelector("#nav");
-// onclick event on toggle Collapse span tag
-toggleCollapse.onclick = (e) => {
-  nav.classList.toggle("collapse");
-  e.target.classList.toggle("toggle-click");
-};
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    // sticky navbar on scroll script
-    if (this.scrollY > 20) {
-      $("#nav").addClass("sticky");
-    } else {
-      $("#nav").removeClass("sticky");
-    }
-  });
-});
-
 const videoGallery=document.getElementById("video-gallery");
 const imageGallery=document.getElementById("image-gallery");
 const imageButton=document.getElementById("image-button");
@@ -41,6 +22,7 @@ const modal=document.getElementsByClassName("modal");
 const closeModal=document.getElementsByClassName("close-modal");
 const Images=document.getElementsByClassName("gallery-image");
 const modalImage=document.getElementById("modal-img");
+var currentImage=0;
 modal[0].style.display="none";
 
 closeModal[0].addEventListener("click",function(){
@@ -49,8 +31,21 @@ closeModal[0].addEventListener("click",function(){
 
 function imageModal(n)
 {
-  const currentImage=Images[n].src;
-  modalImage.src=currentImage;
+  currentImage=n;
+  const currentImageSrc=Images[n].src;
+  modalImage.src=currentImageSrc;
   modal[0].style.display="flex";
 }
 
+function Navigate(x){
+  currentImage+=x;
+  if(currentImage>=Images.length)
+  {
+    currentImage=0;
+  }
+  if(currentImage<0)
+  {
+    currentImage=Images.length-1;
+  }
+  modalImage.src=Images[currentImage].src;
+}
