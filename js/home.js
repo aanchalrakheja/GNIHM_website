@@ -265,10 +265,10 @@ newsCarousel(0);
 awardsCarousel(0);
 setInterval(() => {
   newsCarousel(1);
-}, 7500);
+}, 4500);
 setInterval(() => {
   awardsCarousel(1);
-}, 7500);
+}, 4500);
 
 
 // gallery carousel
