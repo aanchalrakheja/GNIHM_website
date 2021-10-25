@@ -4,7 +4,7 @@ $(document).ready(function () {
     var ResY = document.body.offsetWidth;
     console.log(ResY);
     if (ResY < 1000) {
-      $("nav").css("background", "rgb(228, 64, 35)");
+      $("nav").css("background", "rgb(255, 102, 0)");
     }
   }
   $(window).scroll(function () {
@@ -13,12 +13,12 @@ $(document).ready(function () {
     if (ResY >= 1000) {
       console.log("called");
       if (scroll > 100) {
-        $("nav").css("background", "rgb(228, 64, 35)");
+        $("nav").css("background", "rgb(255, 102, 0)");
       } else {
         $("nav").css("background", "transparent");
       }
     } else {
-      $("nav").css("background", "rgb(228, 64, 35)");
+      $("nav").css("background", "rgb(255, 102, 0)");
     }
   });
 });
