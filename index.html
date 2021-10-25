@@ -435,15 +435,21 @@
       <section class="news-section">
         <h2 class="common-head">News</h2>
 
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <div>
-            <img
-              src="/assets/Facilities/leftarrow.png"
-              id="news-arrow-left"
-              onclick="newsCarousel(-1)"
-            />
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div>
+          <img src="./assets/Facilities/leftarrow.png" id="news-arrow-left" onclick="newsCarousel(-1)" />
+        </div>
+        <div class="news-carousel">
+          <div class="news-card">
+            <img src="./assets/home/news_and_awards.png" alt="news" />
+            <h4 class="news-headline">
+              Created history with 100% placement, See our story
+            </h4>
+            <h5 class="news-desc">
+              Guru Nanak Institute of Hotel Management is a prime hotel
+              Management is a prime hotel
+            </h5>
+            <p class="news-date">18 June, 2021</p>
           </div>
           <div class="news-carousel">
             <div class="news-card">
@@ -490,7 +496,11 @@
             />
           </div>
         </div>
-      </section>
+        <div>
+          <img src="./assets/Facilities/rightarrow.png" id="news-arrow-right" onclick="newsCarousel(1)" />
+        </div>
+      </div>
+    </section>
 
       <!-- awards section -->
       <section class="awards-section">
@@ -664,439 +674,59 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="gallery-section">
-      <h2 class="common-head">Gallery</h2>
-      <p class="common-subhead">
-        GNIHM provides the best facilities and quality training
-      </p>
-      <div class="cent">
-        <a href="">View Gallery &nbsp;<i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div id="image-gallery">
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image3"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-3.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image3"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image3Label"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-3.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
+  <section class="gallery-section">
+    <h2 class="common-head">Gallery</h2>
+    <p class="common-subhead">
+      GNIHM provides the best facilities and quality training
+    </p>
+    <div class="cent">
+      <a href="">View Gallery &nbsp;<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div id="gallery">
+      <!-- modal -->
+      <div class="modals">
+        <div class="close-modal-button">&times;</div>
+        <div class="navigate">
+          <img src="./assets/facilities/leftarrow.png" id="navigate-left" onclick="NavigateVideo(-1)">
+        </div>
+        <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="modal-video">
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="modal-video">
+        <iframe src="https://www.youtube.com/embed/yzGyv6xksnM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"class="modal-video"></iframe>
+        <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="modal-video">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="modal-video"></iframe>
+        <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="modal-video">
+        <div class="navigate">
+          <img src="./assets/facilities/rightarrow.png" id="navigate-right" onclick="NavigateVideo(1)">
         </div>
 
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image4"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-1.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image4"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image4"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-1.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image5"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-3.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image5"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image5"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-3.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image6"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image6"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image6"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image7"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image7"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image7"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image8"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image8"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image8"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image9"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image9"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image9"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image10"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image10"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image10"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image11"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image11"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image11"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          type="button"
-          class="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#image12"
-        >
-          <img
-            src="./assets/student-support/upcoming-event-2.svg"
-            alt="gallery"
-            class="img-fluid"
-          />
-        </button>
-        <div
-          class="modal fade"
-          id="image12"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="image12"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body" style="text-align: center">
-                <img
-                  src="./assets/student-support/upcoming-event-2.svg"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="alumni-stories">
-      <h2 class="common-head">Alumni Stories</h2>
-      <p class="common-subhead">
-        GNIHM provides the best facilities and quality training
-      </p>
-      <div class="alumnicards">
-        <!-- CAROUSEL DIV -->
-        <div class="owl-carousel owl-theme alumni-carousel">
-          <!-- INDIVIDUAL CARD DIV -->
-          <!-- DUPLICATE THESE DIVS TO MAKE MORE CARDS -->
-          <div>
-            <!-- ENTER ALL YOUR CONTENT IN THE CARD IN HERE -->
+      <!-- thumbnail for gallery -->
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(0)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(1)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(2)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(3)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(4)">
+      <img src="./assets/student-support/upcoming-event-3.svg" alt="gallery" class="gallery-video" onclick="videoModal(5)">
+      <img src="./assets/student-support/upcoming-event-1.svg" alt="gallery" class="gallery-video" onclick="videoModal(6)">
+      <img src="./assets/student-support/upcoming-event-2.svg" alt="gallery" class="gallery-video" onclick="videoModal(7)">
+    
+    </div>    
+  </section>
+  <section class="alumni-stories">
+    <h2 class="common-head">Alumni Stories</h2>
+    <p class="common-subhead">
+      GNIHM provides the best facilities and quality training
+    </p>
+    <div class="alumnicards">
+      <!-- CAROUSEL DIV -->
+      <div class="owl-carousel owl-theme alumni-carousel">
+        <!-- INDIVIDUAL CARD DIV -->
+        <!-- DUPLICATE THESE DIVS TO MAKE MORE CARDS -->
+        <div>
+          <!-- ENTER ALL YOUR CONTENT IN THE CARD IN HERE -->
 
             <div class="alumnicard">
               <div class="maingrid">
@@ -1336,13 +966,23 @@
           </div>
         </div>
       </div>
-      <section id="copyright-text">
-        <span
-          ><span class="copyright"></span> Design & Develop by YUVA Foundation
-          2021. All rights reserved.
-        </span>
-      </section>
-    </footer>
+    </div>
+    <section id="copyright-text">
+      <span><span class="copyright"></span> Design & Develop by YUVA Foundation
+        2021. All rights reserved.
+      </span>
+    </section>
+  </footer>
+
+  <script src="./js/home.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
     <script src="./js/home.js"></script>
     <script src="./js/script.js"></script>

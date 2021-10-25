@@ -265,14 +265,50 @@ newsCarousel(0);
 awardsCarousel(0);
 setInterval(() => {
   newsCarousel(1);
-}, 5500);
+}, 4500);
 setInterval(() => {
   awardsCarousel(1);
-}, 5500);
+}, 4500);
 
-const imageGallery = document.getElementById("image-gallery");
-const imageButton = document.getElementById("image-button");
-function callImages() {
-  imageButton.classList.add("active");
-  imageGallery.style.display = "flex";
+
+// gallery carousel
+const modal=document.getElementsByClassName("modals");
+const closeModal=document.getElementsByClassName("close-modal-button");
+const Videos=document.getElementsByClassName("gallery-video");
+const modalVideo=document.getElementsByClassName("modal-video");
+var currentVideo=0; 
+modal[0].style.display="none";
+
+
+closeModal[0].addEventListener("click",function(){
+    modal[0].style.display="none";
+  });
+
+function videoModal(n)
+{
+    currentVideo=n;
+    for(var i=0;i<modalVideo.length;i++)
+    {
+        modalVideo[i].style.display="none";
+    }
+    modalVideo[n].style.display="block";
+    modal[0].style.display="flex";
+} 
+
+function NavigateVideo(y)
+{
+    currentVideo+=y;
+  if(currentVideo>=Videos.length)
+  {
+    currentVideo=0;
+  }
+  if(currentVideo<0)
+  {
+    currentVideo=Videos.length-1;
+  }
+  for(var a=0;a<modalVideo.length;a++)
+  {
+      modalVideo[a].style.display="none";
+  }
+  modalVideo[currentVideo].style.display="block";
 }
