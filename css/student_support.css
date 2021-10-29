@@ -31,575 +31,364 @@ a {
 .text-black {
   color: #fff;
 }
-.nav {
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-}
-.nav.sticky {
-  background: #ff5c00;
-}
-.nav.sticky .social {
-  color: #fff;
-}
-.nav .sticky .nav-items {
-  color: #fff;
-}
 
-.nav .sticky .hover-underline-animation:after {
-  background-color: rgb(167, 148, 148);
-}
-
-nav {
-  padding: 0 10rem;
-  position: relative;
-  justify-content: space-between;
-  height: 0rem;
-  min-height: 13vh;
-  overflow-y: hidden;
-  transition: height 1s cubic-bezier(0.26, -0.01, 0, 1.01);
-}
-
-.nav-brand img {
-  display: block;
-}
-
-nav .nav-items {
-  list-style-type: none;
-  margin: 0;
-}
-
-nav .nav-items .nav-link {
-  padding: 1.3rem 1rem;
+/* -----------------------------STUDENT SUPPORT PAGE---------------------------------------------- */
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  color: white;
+  height: 50vh;
+  width: 100vw;
+  background-image: url(../assets/academics/backimg_academics.png);
+}
+.heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-size: 48px;
+}
+.heading p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  letter-spacing: 0.04em;
+}
+.section {
+  margin-top: 80px;
 }
 
-nav .social {
-  padding: 1.7rem 0;
-  color: #fff;
-  display: flex;
+/* HEADING FOR SECTION */
+.section .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-align: Center;
 }
 
-nav .social i {
-  padding: 0 0.7rem;
-  size: 10px;
+/* SUBHEADING FOR SECTION*/
+.section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
-nav .toggle-collapse {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  cursor: pointer;
-  display: none;
-}
-
-nav .toggle-collapse .toggle-icons {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.4rem 1rem;
-}
-
-nav .toggle-collapse .toggle-icons i {
-  font-size: 1.4rem;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #fff;
-}
-
-.hover-underline-animation:after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.collapse {
-  height: 34rem;
-  background-color: #ff5c00;
-}
-
-/* creating own toggle icons  */
-.icon,
-.icon::before,
-.icon::after {
-  position: relative;
-  width: 8px;
-  border: 2px solid var(--text-gray);
-  border-radius: 3rem;
-  display: inline-block;
-  transition: all 0.4s ease;
-  transition-property: width, left;
-}
-
-.icon::before {
-  content: " ";
-  position: absolute;
-  top: 5px;
-  width: 20px;
-  left: -18px;
-}
-
-.icon::after {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  left: -2px;
-}
-
-.toggle-click,
-.toggle-click::before,
-.toggle-click::after {
-  width: 20px;
-}
-
-.toggle-click::before {
-  left: -2px;
-}
-  @media (max-width: 947px) {
-    .menu-btn {
-      display: block;
-      z-index: 999;
-    }
-    .menu-btn i.active:before {
-      content: "\f00d";
-    }
-  }
-  
-  @media only screen and(max-width:800px) {
-    .hover-underline-animation:after {
-      background-color: #fff;
-    }
-    nav .nav-items {
-      flex-direction: column;
-    }
-    nav {
-      padding: 0;
-      flex-direction: column !important;
-      display: block !important;
-    }
-    nav .flex-row .collapse {
-      padding-left: 0;
-    }
-  
-    nav .toggle-collapse {
-      display: initial;
-    }
-  }
-  
-  @media (max-width: 690px) {
-    .max-width {
-      padding: 0 23px;
-    }
-  
-    nav .nav-items {
-      flex-direction: column;
-    }
-    nav {
-      padding: 0;
-      flex-direction: column !important;
-      display: block !important;
-    }
-    nav .flex-row .collapse {
-      padding-left: 0;
-    }
-  
-    nav .toggle-collapse {
-      display: initial;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .hover-underline-animation:after {
-      background-color: #fff;
-    }
-    nav .nav-items {
-      flex-direction: column;
-    }
-    nav {
-      padding: 0;
-      flex-direction: column !important;
-      display: block !important;
-    }
-    nav .flex-row .collapse {
-      padding-left: 0;
-    }
-  
-    nav .toggle-collapse {
-      display: initial;
-    }
-  }
-  
-
-  /* -----------------------------STUDENT SUPPORT PAGE---------------------------------------------- */
-  .heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    height: 50vh;
-    width: 100vw;
-    background-image: url(../assets/academics/backimg_academics.png);
-  }
-  .heading h1 {
-    font-size: 48px;
-    font-weight: bold;
-    font-size: 48px;
-  }
-  .heading p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 170.5%;
-    text-align: center;
-    margin: 0 20% 0 20%;
-    letter-spacing: 0.04em;
-  }
-  .section {
-    margin-top: 80px;
-  }
-
-  /* HEADING FOR SECTION */
-  .section .title {
-    font-family: "Poppins", sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 0.01em;
-    text-align: Center;
-  }
-
-  /* SUBHEADING FOR SECTION*/
-  .section p {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-    text-align: center;
-  }
-
-  /*carousel*/
+/*carousel*/
 .upcomingeventcards {
-    margin: 2rem 8rem 0 8rem;
+  margin: 2rem 8rem 0 8rem;
+}
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.upcomingeventcards .eventcard {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 6px;
+  margin: 1.5rem 0 0 0;
+}
+.eventcard .imagecard {
+  box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+}
+
+.upcomingeventcards .eventcard .imagecard img {
+  width: 368px;
+  height: 264px;
+}
+.eventcard p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  /* text-align: center; */
+  letter-spacing: 0.045em;
+
+  color: #343434;
+}
+.eventcard h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  color: #000000;
+}
+.eventcard h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 26px */
+  /* text-align: left; */
+  letter-spacing: 0.02em;
+  margin: 0.5rem 0rem;
+  color: #000000;
+}
+
+/* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
+.customNextBtn {
+  position: absolute;
+  top: 45%;
+  right: 103%;
+}
+.customPrevBtn {
+  position: absolute;
+  top: 45%;
+  left: 103%;
+}
+/* DOTS FOR CAROUSEL */
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #869791;
+  border-radius: 20px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 12px;
+}
+.owl-theme .owl-dots {
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: orange;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+
+/* PAST EVENT */
+.past-event-desc {
+  margin: 3rem 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.event-desc {
+  margin-left: 2rem;
+}
+.event-desc p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.045em;
+  color: #343434;
+}
+.view-event {
+  background-color: #ff5c00;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 16px;
+  margin-top: 1.4rem;
+  color: white;
+  font-weight: 300;
+}
+
+/* student council section */
+.council-container {
+  margin: 3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.council-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.8rem;
+  padding: 0.5rem;
+}
+.council-card h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #343434;
+  margin: 0.6rem 0rem 0.4rem 0rem;
+}
+.council-card h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #343434;
+}
+
+/* student support card */
+.studentsupportcards {
+  margin: 2rem 8rem 0 8rem;
+}
+/* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
+.studentsupportcards .supportcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 1.5rem 0 0 0;
+}
+.supportcard .imagecard {
+  box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+}
+
+.studentsupportcards .supportcard .imagecard img {
+  width: 368px;
+  height: 264px;
+}
+.supportcard p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170.5%;
+  /* or 27px */
+  /* text-align: center; */
+  letter-spacing: 0.045em;
+  margin-top: 0.4rem;
+  width: 85%;
+  text-align: center;
+  color: #343434;
+}
+.supportcard h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  color: #000000;
+}
+
+@media screen and (max-width: 1050px) {
+  .past-event-desc {
+    flex-wrap: wrap;
   }
-  /* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
-  .upcomingeventcards .eventcard {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    flex-direction: column;
-  
-    border-radius: 6px;
-    margin: 1.5rem 0 0 0;
+  .event-image {
+    width: 100%;
+    text-align: center;
   }
-  .eventcard .imagecard {
-    box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
+  .event-image img {
+    max-width: 100%;
   }
-  
-  .upcomingeventcards .eventcard .imagecard img {
-    width: 368px;
-    height: 264px;
-  }
-  .eventcard p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 170.5%;
-    /* or 27px */
-    /* text-align: center; */
-    letter-spacing: 0.045em;
-  
-    color: #343434;
-  }
-  .eventcard h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 130%;
-    /* or 26px */
-    /* text-align: center; */
-    letter-spacing: 0.02em;
+  .event-desc {
     margin-top: 2rem;
-    color: #000000;
+    margin-left: 0px;
+    text-align: justify;
   }
-  .eventcard h4 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    /* or 26px */
-    /* text-align: left; */
-    letter-spacing: 0.02em;
-    margin:0.5rem 0rem;
-    color: #000000;
+  .upcomingeventcards .eventcard {
+    align-items: center;
   }
-  
-  /* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
-  .customNextBtn {
-    position: absolute;
-    top: 45%;
-    right: 103%;
+}
+
+@media (max-width: 1000px) {
+  .eventcard h2,
+  .supportcard h2 {
+    font-size: 18px;
   }
-  .customPrevBtn {
-    position: absolute;
-    top: 45%;
-    left: 103%;
+  .eventcard p,
+  .supportcard p {
+    font-size: 14px;
+    line-height: 130.5%;
+    /* or 27px */
+    margin-top: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.045em;
+    color: #343434;
+    width: 100%;
   }
-  /* DOTS FOR CAROUSEL */
-  .owl-theme .owl-controls .owl-page span {
-    background: none repeat scroll 0 0 #869791;
-    border-radius: 20px;
-    display: block;
-    height: 12px;
-    margin: 5px 7px;
-    opacity: 0.5;
-    width: 12px;
+}
+@media (max-width: 900px) {
+  .upcomingeventcards,
+  .studentsupportcards {
+    margin: 0rem 5rem 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .upcomingeventcards,
+  .studentsupportcards {
+    margin: 0rem 3rem 0 3rem;
   }
   .owl-theme .owl-dots {
     text-align: center;
+    margin-top: 1.5rem;
   }
-  
-  .owl-theme .owl-dots .owl-dot.active span,
-  .owl-theme .owl-dots .owl-dot:hover span {
-    background: orange;
+  .heading {
+    height: fit-content;
+    padding-top: 60px;
   }
-  .owl-theme .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    background: #d6d6d6;
-    display: block;
-    transition: opacity 0.2s ease;
-    border-radius: 30px;
-  }
-
-  /* PAST EVENT */
-  .past-event-desc{
-      margin:3rem 10%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: flex-start;
-  }
-  .event-desc{
-      margin-left:2rem;
-  }
-  .event-desc p{
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 0.045em;
-    color: #343434;
-  }
-  .view-event{
-      background-color:#ff5c00;
-      border:none;
-      padding:0.8rem 1.5rem;
-      font-size:16px;
-      margin-top:1.4rem;
-      color:white;
-      font-weight:300;
-  }
-
-  /* student council section */
-  .council-container{
-      margin:3rem 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-  }
-
-  .council-card{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin:0.8rem;
-      padding:0.5rem;
-  }
-  .council-card h2{
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color: #343434;
-    margin:0.6rem 0rem 0.4rem 0rem;
-  }
-  .council-card h4{
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    color: #343434;
-  }
-
-  /* student support card */
-  .studentsupportcards {
-    margin: 2rem 8rem 0 8rem;
-  }
-  /* CSS FOR INDIVIDUAL CARD IN CAROUSEL */
-  .studentsupportcards .supportcard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 6px;
-    margin: 1.5rem 0 0 0;
-  }
-  .supportcard .imagecard {
-    box-shadow: 0px 4px 20px rgba(142, 142, 142, 0.25);
-  }
-  
-  .studentsupportcards .supportcard .imagecard img {
-    width: 368px;
-    height: 264px;
-  }
-  .supportcard p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 170.5%;
-    /* or 27px */
-    /* text-align: center; */
-    letter-spacing: 0.045em;
-    margin-top:0.4rem;
-    width:85%;
-    text-align:center;
-    color: #343434;
-  }
-  .supportcard h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 130%;
-    /* or 26px */
+  .heading h1 {
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
-    letter-spacing: 0.02em;
-    margin-top: 2rem;
-    color: #000000;
+    margin: auto 8%;
   }
+  .heading p {
+    font-size: 14px;
+    margin: 5%;
+  }
+  .section .title {
+    font-size: 20px;
+  }
+  .section p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+  .past-event-desc {
+    margin: 24px 10%;
+  }
+  .event-image img {
+    max-width: 100%;
+  }
+  .council-container {
+    margin: 3rem 8%;
+  }
+  .council-card {
+    margin: 0.3rem;
+    padding: 0.2rem;
+  }
+  .council-card h2 {
+    font-size: 14px;
+  }
+  .council-card h4 {
+    font-size: 12px;
+  }
+  .council-card img {
+    width: 100px;
+  }
+}
 
-  @media screen and (max-width:1050px)
-  {
-      .past-event-desc{
-          flex-wrap:wrap;
-      }
-      .event-image{
-          width:100%;
-          text-align:center;
-      }
-      .event-image img{
-        max-width:100%;
-    }
-      .event-desc{
-          margin-top:2rem;
-          margin-left:0px;
-          text-align: justify;
-      }
-      .upcomingeventcards .eventcard {
-        align-items: center;
-      }
-  }
-
-  @media (max-width: 1000px) {
-    .eventcard h2,.supportcard h2 {
-      font-size: 18px;
-    }
-    .eventcard p,.supportcard p {
-      font-size: 14px;
-      line-height: 130.5%;
-      /* or 27px */
-      margin-top: 0.5rem;
-      text-align: center;
-      letter-spacing: 0.045em;
-      color: #343434;
-      width:100%;
-    }
-  }
-  @media (max-width: 900px) {
-    .upcomingeventcards,.studentsupportcards {
-      margin: 0rem 5rem 0 5rem;
-    }
-  }
-  @media (max-width: 500px) {
-    .upcomingeventcards,.studentsupportcards {
-      margin: 0rem 3rem 0 3rem;
-    }
-    .owl-theme .owl-dots {
-      text-align: center;
-      margin-top: 1.5rem;
-    }
-    .heading{
-      height:fit-content;
-      padding-top:60px;
-    }
-    .heading h1 {
-      font-weight: bold;
-      font-size: 30px;
-      text-align:center;
-      margin: auto 8%;
-    }
-    .heading p {
-      font-size: 14px;
-      margin:5%;
-    }
-    .section .title {
-      font-size: 20px;
-    }
-    .section p {
-      font-family: "Poppins", sans-serif;
-      font-size: 14px;
-    }
-    .past-event-desc{
-        margin:24px 10%;
-    }
-    .event-image img{
-        max-width:100%;
-    }
-    .council-container{
-      margin:3rem 8%;
-    }
-    .council-card{
-        margin: 0.3rem;
-        padding: 0.2rem;
-    }
-    .council-card h2{
-        font-size:14px;
-    }
-    .council-card h4{
-        font-size: 12px;
-    }
-    .council-card img{
-        width:100px;
-    }
-  }
-  
-
-  /* footer section */
+/* footer section */
 #footer {
   margin-top: 2rem;
   background-color: #ff7b31;
