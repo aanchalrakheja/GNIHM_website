@@ -8,10 +8,12 @@
   transition: 0.3s ease-in-out;
 }
 body {
-    overflow-x: hidden;
-    background-color: lightgrey;
-  }
-
+  overflow-x: hidden;
+  background-color: lightgrey;
+}
+a {
+  text-decoration: none !important;
+}
 /* CONTACT PAGE */
 .heading {
   display: flex;
@@ -28,6 +30,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 15vh;
 }
 .heading p {
   font-weight: 300;
@@ -76,7 +79,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  margin:auto;
+  margin: auto;
 }
 .map {
   flex-basis: 50%;
@@ -145,7 +148,6 @@ body {
     font-size: 16px;
   }
 }
-
 
 /* footer */
 #footer {
@@ -278,4 +280,6 @@ body {
 }
 
 /* footer */
-
+footer ul {
+  padding-left: 0;
+}

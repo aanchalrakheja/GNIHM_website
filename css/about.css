@@ -34,200 +34,35 @@ section {
 
 /* ---NAVBAR--- */
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flex-column {
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-a {
-  text-decoration: none;
-}
-
-.text-black {
-  color: #fff;
-}
-.nav {
-  max-width: 100vw;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  
-}
-.nav.sticky {
-  background: #ff5c00;
-}
-.nav.sticky .social {
-  color: #fff;
-}
-.nav .sticky .nav-items {
-  color: #fff;
-}
-
-.nav .sticky .hover-underline-animation:after {
-  background-color: rgb(167, 148, 148);
-}
-
-nav {
-  padding: 0 10rem;
-  position: relative;
-  justify-content: space-between;
-  height: 0rem;
-  min-height: 13vh;
-  overflow-y: hidden;
-  transition: height 1s cubic-bezier(0.26, -0.01, 0, 1.01);
-}
-
-.nav-brand img {
-  display: block;
-}
-
-nav .nav-items {
-  list-style-type: none;
-  margin: 0;
-}
-
-nav .nav-items .nav-link {
-  padding: 1.3rem 1rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-}
-
-nav .social {
-  padding: 1.7rem 0;
-  color: #fff;
-  display: flex;
-}
-
-nav .social i {
-  padding: 0 0.7rem;
-  size: 10px;
-}
-
-nav .toggle-collapse {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  cursor: pointer;
-  display: none;
-}
-
-nav .toggle-collapse .toggle-icons {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.4rem 1rem;
-}
-
-nav .toggle-collapse .toggle-icons i {
-  font-size: 1.4rem;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #fff;
-}
-
-.hover-underline-animation:after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.collapse {
-  height: 34rem;
-}
-
-/* creating own toggle icons  */
-.icon,
-.icon::before,
-.icon::after {
-  position: relative;
-  width: 8px;
-  border: 2px solid var(--text-gray);
-  border-radius: 3rem;
-  display: inline-block;
-  transition: all 0.4s ease;
-  transition-property: width, left;
-}
-
-.icon::before {
-  content: " ";
-  position: absolute;
-  top: 5px;
-  width: 20px;
-  left: -18px;
-}
-
-.icon::after {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  left: -2px;
-}
-
-.toggle-click,
-.toggle-click::before,
-.toggle-click::after {
-  width: 20px;
-}
-
-.toggle-click::before {
-  left: -2px;
-}
-
-
 /*ABOUT PAGE*/
 
 .about {
-  display: flex;
   background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(95, 94, 94, 0.034)),
     url(../assets/about/about_bg.png);
-
-  height: 70vh;
-  color: #fff;
-  max-width: 100vw;
-  background-size: 100% 70%;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
+  color: white;
+  height: 70vh;
+  width: 100vw;
 }
-
 /*About Section*/
 
-.aboutpage .heading {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1% 10%;
-  text-align: center;
-}
-.about .heading h1 {
+.about h1 {
   font-size: 48px;
-  font-weight: 700px;
-  color: #fafafa;
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 15vh;
 }
-.about .heading p {
-  font-weight: 16px;
+.about p {
   font-weight: 300;
-  color: #ffffff;
+  font-size: 16px;
+  line-height: 170.5%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  letter-spacing: 0.04em;
 }
 
 /*Goal Section*/
@@ -237,7 +72,7 @@ nav .toggle-collapse .toggle-icons i {
   overflow-x: hidden;
   display: flex;
   align-items: center;
-  margin:  -2% 5%;
+  margin: -2% 5%;
 }
 
 .goal-div {
@@ -256,11 +91,9 @@ nav .toggle-collapse .toggle-icons i {
   margin-left: 20px;
 }
 
-
-
 /*Message section-this style is common to all section headings*/
 
-#message{
+#message {
   margin-top: -90px;
 }
 
@@ -291,7 +124,6 @@ nav .toggle-collapse .toggle-icons i {
   justify-content: center;
 }
 
-
 .team-carasouel {
   padding: 0px 166px;
   padding: 100px 20px;
@@ -311,13 +143,11 @@ nav .toggle-collapse .toggle-icons i {
   top: 40px;
   width: 200px;
   height: 200px;
-  
 }
 .team-carasouel img {
   width: 100%;
   height: 100%;
   border-radius: 50% 50%;
-  
 }
 .name {
   margin-top: 50px;
@@ -332,8 +162,6 @@ nav .toggle-collapse .toggle-icons i {
 
 /*end of team carasouel*/
 
-
-
 /*Partnerships section*/
 
 .partner {
@@ -343,35 +171,26 @@ nav .toggle-collapse .toggle-icons i {
   overflow: hidden;
 }
 
-
-
 /*Partnership carasouel*/
 
-.owl-carousel.partner-image-div{
+.owl-carousel.partner-image-div {
   margin-bottom: -250px;
-
-
 }
-.partner-image-div{
-  background:#ff7b31;
+.partner-image-div {
+  background: #ff7b31;
 }
-.partner-image-div div{
+.partner-image-div div {
   padding: 10px 40px;
 }
-.partner-image-div div img{
+.partner-image-div div img {
   width: 50%;
-  height:50%;
+  height: 50%;
   margin: 20px 10px;
 }
 
-
 .partner-heading p {
   color: #ffffff;
-  
 }
-
-
-
 
 /*Faculty section*/
 .faculty {
@@ -385,7 +204,7 @@ nav .toggle-collapse .toggle-icons i {
   align-content: center;
 }
 
-.round-div{
+.round-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,7 +212,6 @@ nav .toggle-collapse .toggle-icons i {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-
 }
 .faculty-image {
   display: flex;
@@ -403,11 +221,10 @@ nav .toggle-collapse .toggle-icons i {
   padding: 30px 15px;
 }
 
-.faculty-image img{
+.faculty-image img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  
 }
 
 .faculty-heading h3 {
@@ -416,12 +233,9 @@ nav .toggle-collapse .toggle-icons i {
   margin: 10px 0px;
 }
 
-.faculty-heading p{
+.faculty-heading p {
   color: #1d1e1f;
 }
-
-
-
 
 /*facilities section*/
 .facilities {
@@ -434,7 +248,6 @@ nav .toggle-collapse .toggle-icons i {
   align-items: center;
   justify-content: center;
   top: 50px;
-  
 }
 button {
   border: none;
@@ -475,63 +288,33 @@ button {
   font-size: 18px;
 }
 
-
-
-
-
-@media screen and (max-width:1250px) {
-  .facilities
-  {
+@media screen and (max-width: 1250px) {
+  .facilities {
     border: none;
   }
-  
+
   .facility-circle {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .faculty{
+  .faculty {
     margin: 0% 5%;
   }
   button {
     align-self: center;
     top: -10px;
   }
-  
 }
 
-
-
-@media screen and (max-width:900px) {
-  
-  .hover-underline-animation:after {
-    background-color: #fff;
-  }
-  nav .nav-items {
+@media screen and (max-width: 900px) {
+  .goal {
     flex-direction: column;
   }
-  nav {
-    padding: 0;
-    flex-direction: column !important;
-    display: block !important;
-  }
-  nav .flex-row .collapse {
-    padding-left: 0;
-  }
 
-  nav .toggle-collapse {
-    display: initial;
-  }
-
-  .goal{
-    flex-direction: column;
-  }
- 
-
-  .partner-heading{
+  .partner-heading {
     max-width: 100%;
     padding: 0% 10%;
-
   }
   .team-carasouel {
     padding: 0% 10%;
@@ -547,14 +330,11 @@ button {
     top: 10px;
     width: 100px;
     height: 100px;
-    
   }
-  
 
   .team-carasouel p.description {
     padding: 20px 5%;
   }
-  
 
   .faculty {
     margin: 0% 10%;
@@ -563,7 +343,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
   }
-  
+
   .facilities {
     max-width: 100vw;
     margin: -20% 10% 0% 10%;
@@ -583,24 +363,22 @@ button {
     width: 90px;
     margin: 9px 9px;
   }
-  
 }
 
-@media screen and (max-width:568px) {
-  #idpartner>h2{
+@media screen and (max-width: 568px) {
+  #idpartner > h2 {
     font-size: larger;
   }
-  #idpartner>p{
+  #idpartner > p {
     margin-top: 5px;
     font-size: 11px;
     font-weight: bolder;
   }
 }
 
-@media screen and (max-width:300px){
-  .facility-circle{
+@media screen and (max-width: 300px) {
+  .facility-circle {
     grid-template-columns: 1fr;
-    
   }
 }
 
@@ -784,3 +562,10 @@ button {
 }
 
 /* footer */
+footer ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none !important;
+}

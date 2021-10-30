@@ -14,19 +14,8 @@ body {
 
 /* ---NAVBAR--- */
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flex-column {
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .text-black {
@@ -49,6 +38,7 @@ a {
   font-size: 48px;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 15vh;
 }
 .facilitypage .heading p {
   font-weight: 300;
@@ -434,3 +424,6 @@ a {
 }
 
 /* footer */
+footer ul {
+  padding-left: 0;
+}

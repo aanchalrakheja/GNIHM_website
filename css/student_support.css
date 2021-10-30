@@ -10,7 +10,12 @@
 body {
   overflow-x: hidden;
 }
-
+footer ul {
+  padding-left: 0;
+}
+a {
+  text-decoration: none !important;
+}
 /* ---NAVBAR--- */
 
 .flex-row {
@@ -40,7 +45,7 @@ a {
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: white;
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
   background-image: url(../assets/academics/backimg_academics.png);
 }
@@ -48,6 +53,7 @@ a {
   font-size: 48px;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 15vh;
 }
 .heading p {
   font-weight: 300;

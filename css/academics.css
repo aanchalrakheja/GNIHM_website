@@ -9,13 +9,14 @@
 body {
   overflow-x: hidden;
 }
-
+a {
+  text-decoration: none !important;
+}
 /* ACADEMICS PAGE */
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -27,6 +28,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 15vh;
 }
 .heading p {
   font-weight: 300;
@@ -420,3 +422,6 @@ tr:nth-child(even) {
 }
 
 /* footer */
+footer ul {
+  padding-left: 0;
+}

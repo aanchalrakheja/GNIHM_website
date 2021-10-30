@@ -35,7 +35,7 @@ a {
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: white;
-  height: 70vh;
+  height: 50vh;
   width: 100vw;
   background-image: url(../assets/academics/backimg_academics.png);
 }
@@ -330,3 +330,6 @@ a {
 }
 
 /* footer */
+footer ul {
+  padding-left: 0;
+}
