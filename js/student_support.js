@@ -34,8 +34,8 @@ $(document).ready(function () {
       nav: true,
       dots: true,
       navText: [
-        "<img class='customNextBtn' src='./assets/student-support/ion_chevron-forward-circle.svg'/>",
-        "<img class='customPrevBtn' src='./assets/student-support/ion_chevron-forward-circle (1).svg'/>",
+        "<img class='customNextBtn' src='../assets/Facilities/leftarrow.png'/>",
+        "<img class='customPrevBtn' src='../assets/Facilities/rightarrow.png'/>",
       ],
       responsiveClass: true,
       responsive: {
@@ -57,22 +57,22 @@ $(document).ready(function () {
   });
 
 
-  const toggleCollapse = document.querySelector(".toggle-collapse span");
-  const nav = document.querySelector(".nav");
-  // onclick event on toggle Collapse span tag
-  toggleCollapse.onclick = (e) => {
-    nav.classList.toggle("collapse");
-    e.target.classList.toggle("toggle-click");
-  };
+  // const toggleCollapse = document.querySelector(".toggle-collapse span");
+  // const nav = document.querySelector(".nav");
+  // // onclick event on toggle Collapse span tag
+  // toggleCollapse.onclick = (e) => {
+  //   nav.classList.toggle("collapse");
+  //   e.target.classList.toggle("toggle-click");
+  // };
   
-  $(document).ready(function () {
-    $(window).scroll(function () {
-      // sticky navbar on scroll script
-      if (this.scrollY > 20) {
-        $(".nav").addClass("sticky");
-      } else {
-        $(".nav").removeClass("sticky");
-      }
-    });
-  });
+  // $(document).ready(function () {
+  //   $(window).scroll(function () {
+  //     // sticky navbar on scroll script
+  //     if (this.scrollY > 20) {
+  //       $(".nav").addClass("sticky");
+  //     } else {
+  //       $(".nav").removeClass("sticky");
+  //     }
+  //   });
+  // });
   

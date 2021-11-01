@@ -253,14 +253,16 @@ button {
   border: none;
   outline: none;
   background: #ff7b31;
-  width: 130px;
+  width: 150px;
   height: 40px;
   border-radius: 30px;
   cursor: pointer;
   color: white;
   align-self: flex-end;
   position: absolute;
+  padding: 0.2rem 0.4rem;
 }
+
 .facility-circle {
   position: absolute;
   display: flex;

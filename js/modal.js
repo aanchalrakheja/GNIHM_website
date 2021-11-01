@@ -10,6 +10,8 @@ function callImages(){
     videoGallery.style.display="none";
     imageGallery.style.display="flex";
 }
+imageButton.addEventListener("click",callImages);
+
 
 function callVideos(){
     imageButton.classList.remove("active");
@@ -17,6 +19,7 @@ function callVideos(){
     videoGallery.style.display="flex";
     imageGallery.style.display="none"; 
 }
+videoButton.addEventListener("click",callVideos);
 
 const modal=document.getElementsByClassName("modal");
 const closeModal=document.getElementsByClassName("close-modal");
