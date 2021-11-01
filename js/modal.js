@@ -21,6 +21,8 @@ function callVideos(){
 }
 videoButton.addEventListener("click",callVideos);
 
+
+// modal 
 const modal=document.getElementsByClassName("modal");
 const closeModal=document.getElementsByClassName("close-modal");
 const Images=document.getElementsByClassName("gallery-image");
