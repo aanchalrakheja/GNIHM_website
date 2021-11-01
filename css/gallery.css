@@ -109,6 +109,7 @@ a {
 #tabs {
   margin-top: 3rem;
   padding: 0% 10%;
+  text-align:center;
 }
 #tabs button {
   border: none;
