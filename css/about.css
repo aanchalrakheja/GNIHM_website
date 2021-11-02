@@ -305,14 +305,22 @@ section {
 
   .facility-circle {
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .circle-div:nth-child(2){
-    margin: 0rem;
+    margin:0px;
   }
   .circle-div:nth-child(3){
     margin-right:0rem;
   }
+  .circle-div:nth-child(1),.circle-div:nth-child(3)
+  {
+    margin-right:8rem;
+  }
+  .circle-div:nth-child(2){
+    margin-left:0rem 8rem;
+  }
+  
 
   .faculty {
     margin: 0% 5%;
@@ -320,6 +328,12 @@ section {
   .facilities button {
     align-self: center;
     top: -10px;
+  }
+  .circle-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -382,7 +396,7 @@ section {
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 500px) {
   .about h1 {
     font-weight: bold;
     font-size: 30px;
@@ -395,6 +409,21 @@ section {
     font-size: 11px;
     font-weight: bolder;
   }
+  .facility-circle{
+    justify-content: space-evenly;
+  }
+  .facility-circle .circle{
+    width:105px;
+    height: 105px;
+  }
+  .circle-div:nth-child(1),.circle-div:nth-child(3)
+  {
+    margin:0px;
+  }
+  .circle-div:nth-child(2){
+    margin:0rem;
+  }
+  
 }
 
 @media screen and (max-width: 300px) {

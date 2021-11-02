@@ -780,16 +780,21 @@ a {
   #gallery .gallery-video {
     width: 120px;
   }
+  #gallery .gallery-video{
+    margin:0rem 0rem 1rem 1rem;
+  }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
   #gallery {
     padding: 0px 8%;
   }
   #gallery .gallery-video {
     width: 130px;
+    margin:0rem 0rem 1rem 1rem;
   }
 }
+
 
 /* modal */
 .modals {
