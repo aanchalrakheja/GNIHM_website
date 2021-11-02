@@ -37,15 +37,14 @@ section {
 /*ABOUT PAGE*/
 
 .about {
-  background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(95, 94, 94, 0.034)),
-    url(../assets/about/about_bg.png);
+  background: url(../assets/about/about_background.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: white;
-  height: 70vh;
+  height: 50vh;
   width: 100vw;
 }
 /*About Section*/
@@ -55,6 +54,7 @@ section {
   font-weight: bold;
   font-size: 48px;
   margin-top: 15vh;
+  font-family: "Poppins",sans-serif;
 }
 .about p {
   font-weight: 300;
@@ -248,8 +248,9 @@ section {
   align-items: center;
   justify-content: center;
   top: 50px;
+  min-height:fit-content;
 }
-button {
+.facilities button {
   border: none;
   outline: none;
   background: #ff7b31;
@@ -259,7 +260,7 @@ button {
   cursor: pointer;
   color: white;
   align-self: flex-end;
-  position: absolute;
+  /* position: absolute; */
   padding: 0.2rem 0.4rem;
 }
 
@@ -268,10 +269,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 200px;
+  top: 230px;
+  /* flex-wrap: wrap; */
 }
 
-.circle {
+.circle-div:nth-child(2){
+  margin: 1rem 10.5rem;
+}
+.circle-div:nth-child(3){
+  margin-right:10.5rem;
+}
+.facility-circle .circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,7 +287,7 @@ button {
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  margin: 0px 90px;
+  /* margin: 0px 60px 0px 0px; */
   z-index: 99;
 }
 
@@ -296,14 +304,20 @@ button {
   }
 
   .facility-circle {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .circle-div:nth-child(2){
+    margin: 0rem;
+  }
+  .circle-div:nth-child(3){
+    margin-right:0rem;
   }
 
   .faculty {
     margin: 0% 5%;
   }
-  button {
+  .facilities button {
     align-self: center;
     top: -10px;
   }
@@ -351,23 +365,28 @@ button {
     margin: -20% 10% 0% 10%;
     border: none;
   }
-  button {
+  .facilities button {
     align-self: center;
     top: 0px;
   }
-  .facility-circle {
+  /* .facility-circle {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
+
 
   .circle {
     height: 90px;
     width: 90px;
-    margin: 9px 9px;
+    /* margin: 9px 9px; */
   }
 }
 
 @media screen and (max-width: 568px) {
+  .about h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
   #idpartner > h2 {
     font-size: larger;
   }
@@ -379,9 +398,9 @@ button {
 }
 
 @media screen and (max-width: 300px) {
-  .facility-circle {
+  /* .facility-circle {
     grid-template-columns: 1fr;
-  }
+  } */
 }
 
 /* CSS FOR NAVIGATION BUTTON OF CAROUSEL */
@@ -560,6 +579,13 @@ button {
 
   #copyright-text {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1000px)
+{
+  #footer{  
+    margin-top:350px;
   }
 }
 
